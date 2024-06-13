@@ -9,7 +9,7 @@ export default [
       species: 'Perro (Bloodhound)',
       speciesGroup: 'Perros',
       livesIn: 'Casa de Mickey Mouse',
-      filmGenre: ['Comedia', 'Infantil']
+      filmGenre: ["Comedia", "Infantil"]
     },
     extraInfo: {
       curiousFact: 'Pluto debutó en 1930 y originalmente era el perro de Minnie llamado Rover.'

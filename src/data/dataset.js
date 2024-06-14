@@ -379,4 +379,20 @@ export default [
       curiousFact: 'Bruno se transforma en un caballo que ayuda a Cenicienta a ir al baile.'
     }
   },
+  {
+    id: 'bruno',
+    name: 'Bruno',
+    shortDescription: 'De "Cenicienta", es el perro leal y amigo de Cenicienta, sueña con atrapar a Lucifer, el gato malvado.',
+    description: 'Bruno es el leal y soñador perro de Cenicienta que aparece en la película "Cenicienta". Es un perro de grandes dimensiones con un pelaje blanco y marrón y una personalidad dulce y gentil que complementa perfectamente el ambiente del castillo. Bruno es muy cariñoso y protector, especialmente hacia Cenicienta, a quien considera su amiga más querida. Aunque sufre a manos de la madrastra y las hermanastras de Cenicienta, Bruno siempre mantiene una actitud positiva. En la película, Bruno, junto con los ratones Gus y Jaq, intenta detener a Lucifer, para que no arruine el vestido de Cenicienta.',
+    imageUrl: '',
+    facts: {
+      species: 'Perro (Bloodhound)',
+      speciesGroup: 'Perros',
+      liveIn: 'Casa de Cenicienta',
+      filmGenre: ["Fantasía", "Romance", "Musical"]
+    },
+    extraInfo: {
+      curiousFact: 'Bruno se transforma en un caballo que ayuda a Cenicienta a ir al baile.'
+    }
+  },
 ];

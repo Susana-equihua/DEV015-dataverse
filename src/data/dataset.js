@@ -1,193 +1,197 @@
 export default [
-    {
-      "id": "ada-lovelace",
-      "name": "Ada Lovelace",
-      "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-      "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
-      "facts": {
-        "yearOfBirth": "1815",
-        "yearOfDeath": "1852",
-        "birthPlace": "Londres, Reino Unido",
-        "mainField": "Ciencia de la Computación"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
-      }
+  {
+    id: 'pluto',
+    name: 'Pluto',
+    shortDescription: 'Aparece en muchas películas de Disney, es el fiel perro de Mickey Mouse, travieso, leal y juguetón.',
+    description: 'Pluto es el famoso perro de Mickey Mouse, que debutó en "The Chain Gang" en 1930, en ese entonces aún sin nombre y como uno de los sabuesos de Pete. De color amarillo con orejas negras, Pluto es conocido por su lealtad y su carácter juguetón. No habla, pero expresa sus emociones a través de ladridos y lenguaje corporal. Su dueño y mejor amigo es Mickey, comparte amistad con otros personajes de su entorno como Minnie y Goofy, y tiene como principal enemigo a Butch. A pesar de sus travesuras, siempre termina salvando el día y otorgando diversión al ambiente.',
+    imageUrl: '',
+    facts: {
+      species: 'Perro (Bloodhound)',
+      speciesGroup: 'Perros',
+      livesIn: 'Casa de Mickey Mouse',
+      filmGenre: ["Comedia", "Infantil"]
     },
-    {
-      "id": "emmy-noether",
-      "name": "Emmy Noether",
-      "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-      "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
-      "facts": {
-        "yearOfBirth": "1882",
-        "yearOfDeath": "1935",
-        "birthPlace": "Erlangen, Alemania",
-        "mainField": "Matemáticas"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
-      }
+    extraInfo: {
+      curiousFact: 'Pluto debutó en 1930 y originalmente era el perro de Minnie llamado Rover.'
+    }
+  },
+  {
+    id: 'pascal',
+    name: 'Pascal',
+    shortDescription: 'De "Enredados", es el camaleón de Rapunzel, su pequeño amigo, verde, protector, y de ojos saltones.',
+    description: 'Pascal es el leal camaleón de Rapunzel en la película "Enredados". De color verde, ojos saltones y pequeño tamaño, Pascal es valiente y protector. Vive con Rapunzel en la torre de Gothel, sirviendo como su confidente y amigo, siempre está en el hombro de ella acompañándola a todas partes. Inicialmente no se llevaba bien con Flyn, y esto se nos muestra en divertidas escenas en las que lo despierta colocando su lengua en su oreja. A pesar de su tamaño, tiene un gran corazón y no duda en enfrentarse a los peligros para proteger a Rapunzel.',
+    imageUrl: '',
+    facts: {
+      species: 'Camaleón',
+      speciesGroup: 'Pequeñas Criaturas',
+      livesIn: 'Torre de Rapunzel',
+      filmGenre: ['Fantasía', 'Musical']
     },
-    {
-      "id": "hypatia-de-alejandria",
-      "name": "Hypatia de Alejandría",
-      "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-      "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
-      "facts": {
-        "yearOfBirth": "circa 360",
-        "yearOfDeath": "415",
-        "birthPlace": "Alejandría, Egipto",
-        "mainField": "Matemáticas, Filosofía"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
-      }
+    extraInfo: {
+      curiousFact: 'Pascal está basado en el camaleón mascota de una de las animadoras de Disney.'
+    }
+  },
+  {
+    id: 'abu',
+    name: 'Abu',
+    shortDescription: 'De "Aladdín", es el mono travieso y leal compañero de Aladdín, con habilidades para el robo y la aventura.',
+    description: 'Abu es el adorable mono y compañero de Aladdín en la película "Aladdín". Con su pelaje marrón y su chaleco púrpura, Abu es conocido por su astucia y habilidades como ladrón. Vive en las calles de Agrabah junto a Aladdín. Aunque puede ser avaricioso, su lealtad hacia él es inquebrantable. Nos proporciona emocionantes escenas, como aquella en la que consigue liberar a Aladdín de prisión, al robar las llaves y abrir la celda. Sus amigos incluyen a la Princesa Jasmine, el Genio y la alfombra mágica.',
+    imageUrl: '',
+    facts: {
+      species: 'Mono (Macaco)',
+      speciesGroup: 'Pequeñas Criaturas',
+      livesIn: 'Agrabah',
+      filmGenre: ['Aventura', 'Fantasía', 'Musical']
     },
-    {
-      "id": "marjorie-lee-browne",
-      "name": "Marjorie Lee Browne",
-      "shortDescription": "Matemática, contribuyó a la teoría de números.",
-      "description": "Matemática estadounidense, destacó en una época en la que las mujeres afroamericanas enfrentaban múltiples barreras en la educación superior. No solo obtuvo su doctorado en matemáticas, sino que también se convirtió en una destacada educadora, promoviendo la diversidad en las ciencias matemáticas y desafiando la discriminación racial y de género. Su compromiso con la educación y su capacidad para inspirar a futuras generaciones la convierten en un modelo a seguir para las mujeres en la ciencia, dejando una huella perdurable en la historia académica.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjorie-lee-browne.jpg",
-      "facts": {
-        "yearOfBirth": "1914",
-        "yearOfDeath": "1979",
-        "birthPlace": "Memphis, Estados Unidos",
-        "mainField": "Matemáticas"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/design-an-inspiring-and-historically-accurate-imag/6510df7e7bb745f69d67f695441607a8"
-      }
+    extraInfo: {
+      curiousFact: 'Abu fue animado por el legendario animador de Disney Mark Henn.'
+    }
+  },
+  {
+    id: 'figaro',
+    name: 'Figaro',
+    shortDescription: 'De "Pinocho", es el gato travieso y adorable de Gepetto, siempre en líos con Cleo, el pez dorado.',
+    description: 'Figaro es el adorable gato de Geppetto en la película "Pinocho". Con su pelaje blanco y negro, Figaro es travieso pero de buen corazón. Vive en la casa de Geppetto y es amigo de Pinocho y el pez dorado Cleo. Aunque a veces se muestra celoso de la atención que recibe Pinocho, siempre termina ayudando en las aventuras. Una escena divertida de la película es cuando Fígaro intenta atrapar a Cleo mientras está en su pecera, mostrando su naturaleza juguetona y algo celosa. Figaro también aparece en varias series y cortos de Disney, mostrando su popularidad.',
+    imageUrl: '',
+    facts: {
+      species: 'Gato',
+      speciesGroup: 'Gatos',
+      livesIn: 'Taller de Geppetto',
+      filmGenre: ['Fantasía', 'Aventura']
     },
-    {
-      "id": "shakuntala-devi",
-      "name": "Shakuntala Devi",
-      "shortDescription": "Matemática prodigio, conocida como la 'Calculadora Humana'.",
-      "description": "Conocida como \"la bruja de las matemáticas\" de la India, dejó una marca indeleble en el mundo de los números. Su capacidad mental asombrosa la llevó a resolver complejos cálculos matemáticos mentalmente en cuestión de segundos, estableciendo récords mundiales. Además de su talento innato, Devi promovió activamente la educación matemática y luchó por la igualdad de género en un país donde las mujeres enfrentaban desafíos en la ciencia y la educación. Su legado destaca el poder de la mente humana y la importancia de la igualdad de oportunidades en la ciencia.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shakuntala-devi.jpg",
-      "facts": {
-        "yearOfBirth": "1929",
-        "yearOfDeath": "2013",
-        "birthPlace": "Bangalore, India",
-        "mainField": "Matemáticas"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
-      }
+    extraInfo: {
+      curiousFact: 'Walt Disney estaba tan encantado con Figaro que decidió hacerlo la mascota de Minnie Mouse.'
+    }
+  },
+  {
+    id: 'sven',
+    name: 'Sven',
+    shortDescription: 'De "Frozen", es el leal reno de Kristoff, fuerte, adorable y con una debilidad por las zanahorias.',
+    description: 'Sven es el simpático reno de Kristoff en las películas de "Frozen". Su pelaje es marrón y tiene una cornamenta imponente. Vive en el reino de Arendelle y acompaña a Kristoff en todas sus aventuras. Lo que realmente lo caracteriza es su manera única de comunicarse: aunque no puede hablar, sus expresiones faciales y su lenguaje corporal son tan expresivos que Kristoff frecuentemente le presta su voz para interpretar lo que Sven "diría". Sven es conocido por su amor por las zanahorias (en algunas divertidas escenas se lo ve intentando robar la nariz de Olaf) y su carácter juguetón.',
+    imageUrl:'',
+    facts: {
+      species: 'Reno',
+      speciesGroup: 'Animales Salvajes',
+      livesIn: 'Arendelle',
+      filmGenre: ['Fantasía', 'Musical']
     },
-    {
-      "id": "sofia-kovalevskaya",
-      "name": "Sofia Kovalevskaya",
-      "shortDescription": "Matemática y escritora, contribuyó a la teoría de funciones.",
-      "description": "Matemática rusa del siglo XIX, dejó una marca indeleble en la ciencia del siglo XIX al desafiar las barreras de género. Como matemática rusa, superó las restricciones sociales de su época para convertirse en la primera mujer en obtener un doctorado en matemáticas en Europa. Sus contribuciones a la teoría de las ecuaciones diferenciales y la mecánica revolucionaron la disciplina, abriendo nuevas perspectivas en el análisis matemático. Su destacada membresía en la Academia de Ciencias de Suecia marcó un hito en la historia de las mujeres en la ciencia.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sofia-kovalevskaya.jpg",
-      "facts": {
-        "yearOfBirth": "1850",
-        "yearOfDeath": "1891",
-        "birthPlace": "Moscú, Rusia",
-        "mainField": "Matemáticas"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
-      }
+    extraInfo: {
+      curiousFact: 'Sven fue inspirado en parte por los perros de trineo que los animadores de Disney estudiaron.'
+    }
+  },
+  {
+    id: 'pegasus',
+    name: 'Pegasus',
+    shortDescription: 'De "Hércules", es el caballo alado, compañero leal, valiente, rápido y siempre dispuesto a ayudar a Hércules.',
+    description: 'Pegasus es el majestuoso caballo alado de Hércules en la película "Hércules". De color blanco y con una melena azul celeste, vive en el Monte Olimpo, pero acompaña a Hércules en sus aventuras en la Tierra. Una escena particularmente divertida es cuando Pegasus se encuentra con Megara y compite por la atención de Hércules, mostrándose celoso y haciendo todo tipo de monerías para recuperar el afecto de su amigo. Es leal, valiente y siempre está dispuesto a ayudar a Hércules en su misión de convertirse en un héroe.',
+    imageUrl: '',
+    facts: {
+      species: 'Caballo alado',
+      speciesGroup: 'Animales Salvajes',
+      livesIn: 'Olimpo',
+      filmGenre: ['Aventura', 'Fantasía', 'Musical']
     },
-    {
-      "id": "yoko-shimomura",
-      "name": "Yoko Shimomura",
-      "shortDescription": "Compositora de música, destacada en la industria de los videojuegos.",
-      "description": "Compositora japonesa, es una figura destacada en la ciencia de la música y el arte sonoro. Aunque no se dedica a la ciencia en el sentido tradicional, su trabajo en la composición musical ha requerido un profundo entendimiento de la teoría musical y la tecnología de audio. Ha contribuido de manera significativa a la industria de los videojuegos, componiendo icónicas bandas sonoras que han enriquecido la experiencia de juego. Su éxito en un campo donde las mujeres estaban subrepresentadas la convierte en un modelo a seguir, incluso en campos no convencionales como la composición musical.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/yoko-shimomura.jpg",
-      "facts": {
-        "yearOfBirth": "1967",
-        "birthPlace": "Hyogo, Japón",
-        "mainField": "Composición Musical, Video Juegos"
-      },
-      "extraInfo": {
-        "imageSource": "https://www.bing.com/images/create/yoko-shimomura-making-music-for-a-video-game-in-19/6510e40dd1eb45d0906e8c1f4bb601d3"
-      }
+    extraInfo: {
+      curiousFact: 'Fue creado a partir de una nube por Zeus para ser el compañero perfecto de Hércules.'
+    }
+  },
+  {
+    id: 'flounder',
+    name: 'Flounder',
+    shortDescription: 'De "La Sirenita", es el pez colorido y amigo de Ariel, aunque un poco miedoso, está siempre dispuesto a ayudarla.',
+    description: 'Flounder es el pequeño pez amigo de Ariel en "La Sirenita". Su cuerpo es amarillo con rayas azules. Una de sus características más adorables es su habilidad para hacer burbujas cuando está asustado, lo que añade un toque de humor a las situaciones tensas. Como olvidar cuando se encuentra con un tiburón mientras él y Ariel están explorando un barco hundido, y aunque está claramente asustado, intenta mantener la compostura y protegerla, solo para acabar huyendo a toda velocidad con una expresión cómica de terror. Está siempre dispuesto a ayudar a Ariel en su búsqueda de descubrir el mundo humano.',
+    imageUrl: '',
+    facts: {
+      species: 'Pez',
+      speciesGroup: 'Animales Acuáticos',
+      livesIn: 'Océano Atlántico',
+      filmGenre: ['Fantasía', 'Aventura', 'Musical']
     },
-    {
-      "id": "maryam-mirzakhani",
-      "name": "Maryam Mirzakhani",
-      "shortDescription": "Matemática, ganadora del Premio Fields.",
-      "description": "Matemática iraní, hizo historia al convertirse en la primera mujer en ganar la Medalla Fields, el premio más prestigioso en matemáticas. Sus investigaciones en la geometría de superficies y la teoría de las superficies de Riemann han tenido un impacto duradero en la matemática pura. A lo largo de su carrera, Mirzakhani inspiró a muchas mujeres a perseguir carreras en ciencia y matemáticas, derribando las barreras de género. Su enfoque innovador y su capacidad para resolver problemas complejos la convierten en un modelo a seguir para la comunidad científica y en un símbolo de la excelencia matemática.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maryam-mirzakhani.jpg",
-      "facts": {
-        "yearOfBirth": "1977",
-        "yearOfDeath": "2017",
-        "birthPlace": "Teherán, Irán",
-        "mainField": "Matemáticas"
-      },
-      "extraInfo": {
-        "imageSource": "https://chalkdustmagazine.com/features/mathematics-maryam-mirzakhani/"
-      }
+    extraInfo: {
+      curiousFact: 'Flounder, a pesar de su nombre (traducido del inglés), no es un lenguado sino un pez tropical ficticio.'
+    }
+  },
+  {
+    id: 'pua',
+    name: 'Pua',
+    shortDescription: 'De "Moana", es el cerdito encantador y fiel compañero de Moana, curioso y aventurero.',
+    description: 'Pua es el tierno cerdito de Moana en la película "Moana". Con su pelaje blanco y manchas negras, Pua es dulce y amigable. Vive en la isla de Motunui y es el fiel compañero de Moana en sus primeras aventuras. En una escena, Moana y Pua intentan navegar en una canoa por primera vez, y Pua termina cayendo al agua, solo para ser rescatado rápidamente por Moana, mostrando su espíritu aventurero, pero también su vulnerabilidad. Aunque no la acompaña en su travesía por el océano, siempre está presente en su corazón.',
+    imageUrl: '',
+    facts: {
+      species: 'Cerdo',
+      speciesGroup: 'Animales de Granja',
+      livesIn: 'Isla de Motonui',
+      filmGenre: ['Aventura', 'Fantasía', 'Musical']
     },
-    {
-      "id": "adele-goldberg",
-      "name": "Adele Goldberg",
-      "shortDescription": "Informática pionera, co-creadora del lenguaje de programación Smalltalk.",
-      "description": "Informática estadounidense reconocida por su influyente trabajo en la investigación y desarrollo de la programación orientada a objetos. Su contribución más destacada es la creación del lenguaje de programación Smalltalk, que revolucionó la forma en que se desarrollan software y sistemas informáticos. Goldberg ha sido una defensora incansable de la usabilidad y la accesibilidad en la informática, asegurando que las aplicaciones informáticas sean más amigables para los usuarios. Su trabajo ha allanado el camino para una programación más intuitiva y eficiente, y su legado perdura en la industria de la tecnología.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/adele-goldberg.jpg",
-      "facts": {
-        "yearOfBirth": "1945",
-        "birthPlace": "Chicago, Estados Unidos",
-        "mainField": "Ciencias de la Computación"
-      },
-      "extraInfo": {
-        "imageSource": "https://pionerasinformaticas.ujaen.es/en/computer-women-pioneers/adele-goldberg-en"
-      }
+    extraInfo: {
+      curiousFact: 'Su nombre "Pua" significa "flor" en hawaiano, reflejando su dulzura y ternura.'
+    }
+  },
+  {
+    id: 'rajah',
+    name: 'Rajah',
+    shortDescription: 'De "Aladdín", es el tigre guardián y fiel amigo de la princesa Jasmín, feroz pero cariñoso.',
+    description: 'Rajah es el majestuoso tigre de la Princesa Jasmine en la película "Aladdín". Con su pelaje anaranjado y rayas negras, Rajah es una presencia imponente en el palacio de Agrabah. Su personalidad se destaca por su lealtad inquebrantable hacia su dueña y su desconfianza hacia los extraños, especialmente hacia los pretendientes no deseados que intentan cortejar a Jasmine. Una escena divertida en la película es cuando Rajah confronta a Aladdin disfrazado como "Príncipe Ali", dejando en claro con su actitud y gruñidos que no se dejará engañar fácilmente. A pesar de su apariencia feroz, es cariñoso y leal.',
+    imageUrl: '',
+    facts: {
+      species: 'Tigre de Bengala',
+      speciesGroup: 'Animales Salvajes',
+      livesIn: 'Palacio de Agrabah',
+      filmGenre: ['Aventura', 'Fantasía', 'Musical']
     },
-    {
-      "id": "barbara-liskov",
-      "name": "Barbara Liskov",
-      "shortDescription": "Científica de la computación, pionera en programación orientada a objetos.",
-      "description": "Pionera de la informática, es conocida por su trabajo en la programación y la arquitectura de sistemas distribuidos. Fue la primera mujer en obtener un doctorado en ciencias de la computación en el Instituto de Tecnología de Stanford y desarrolló el lenguaje de programación CLU, que estableció fundamentos para la programación orientada a objetos. Liskov ha dejado una marca indeleble en la industria de la tecnología al liderar avances en sistemas de almacenamiento y seguridad informática. Su enfoque en la fiabilidad y la robustez ha influido en el diseño de sistemas críticos en todo el mundo.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/barbara-liskov.jpg",
-      "facts": {
-        "yearOfBirth": "1939",
-        "birthPlace": "Los Angeles, Estados Unidos",
-        "mainField": "Ciencia de la Computación"
-      },
-      "extraInfo": {
-        "imageSource": "https://medium.com/a-computer-of-ones-own/barbara-liskov-inventor-of-abstract-data-types-9f8908fdcf86"
-      }
+    extraInfo: {
+      curiousFact: 'Rajah fue un regalo del Sultán a Jasmín, y es tan protector que incluso asusta a los pretendientes indeseados.'
+    }
+  },
+  {
+    id: 'meeko',
+    name: 'Meeko',
+    shortDescription: 'De "Pocahontas", es el mapache travieso, glotón y amigo de Pocahontas, se llevaba mal con Percy, pero al final se hacen buenos amigos.',
+    description: 'Meeko es el travieso mapache compañero de Pocahontas en la película "Pocahontas". Con su pelaje gris y cola anillada, Meeko es conocido por su glotonería y curiosidad.Una escena divertida en la película es cuando Meeko se encuentra con Percy, el perro de la gobernadora Ratcliffe, y juntos tienen un enfrentamiento cómico por comida, mostrando su naturaleza competitiva pero también su astucia para salirse con la suya. Meeko no solo es el alivio cómico de "Pocahontas", sino también un recordatorio del espíritu libre y aventurero que caracteriza a la protagonista y a la historia en general.',
+    imageUrl: '',
+    facts: {
+      species: 'Mapache',
+      speciesGroup: 'Roedores',
+      livesIn: 'Bosques de Virginia',
+      filmGenre: ['Aventura', 'Drama', 'Musical']
     },
-    {
-      "id": "grace-hopper",
-      "name": "Grace Hopper",
-      "shortDescription": "Científica de la computación, creadora del primer compilador.",
-      "description": "Una de las pioneras de la informática, es famosa por su contribución al desarrollo del primer compilador y al lenguaje de programación COBOL. Además, desafió los estereotipos de género en la década de 1940 al unirse a la Marina de los Estados Unidos y convertirse en la primera programadora de la computadora Harvard Mark I. Su legado abarca la creación de conceptos cruciales como la \"depuración de software\" y su influencia en el desarrollo de la informática moderna, estableciendo estándares para la programación de alto nivel y la innovación tecnológica.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/grace-hopper.jpg",
-      "facts": {
-        "yearOfBirth": "1906",
-        "yearOfDeath": "1992",
-        "birthPlace": "Nueva York, Estados Unidos",
-        "mainField": "Ciencia de la Computación"
-      },
-      "extraInfo": {
-        "imageSource": "https://photos.com/featured/grace-hopper-with-early-computer-bettmann.html"
-      }
+    extraInfo: {
+      curiousFact: 'Meeko tiene una debilidad por las galletas y siempre busca la manera de conseguir más.'
+    }
+  },
+  {
+    id: 'tambor',
+    name: 'Tambor',
+    shortDescription: 'De "Bambi", es el conejo alegre, parlanchín y mejor amigo de Bambi, siempre le está dando buenos consejos.',
+    description: 'Thumper es el divertido conejo amigo de Bambi en la película "Bambi". Con su pelaje gris y blanco, Tambor es conocido por su hábito de golpear el suelo con su pata trasera. Vive en el bosque y ayuda a Bambi a aprender sobre su entorno y hacer nuevos amigos. En una escena, Tambor intenta enseñarle a Bambi cómo "marchar" como un verdadero ciervo, con movimientos exagerados y expresiones graciosas, mostrando su entusiasmo y paciencia a la vez. Es alegre, parlanchín y siempre tiene un buen consejo para Bambi.',
+    imageUrl: '',
+    facts: {
+      species: 'Conejo',
+      speciesGroup: 'Animales Salvajes',
+      livesIn: 'Bosque',
+      filmGenre: ['Drama', 'Infantil']
     },
-    {
-      "id": "margaret-hamilton",
-      "name": "Margaret Hamilton",
-      "shortDescription": "Científica de la computación, lideró desarrollo de software para Apollo 11.",
-      "description": "Destacada científica de la computación que desempeñó un papel fundamental en el programa Apollo de la NASA. Fue directora de la División de Ingeniería de Software en el Laboratorio de Instrumentación del MIT, donde desarrolló el concepto de \"ingeniería de software\". Su liderazgo en el desarrollo del software de vuelo para las misiones Apollo fue fundamental para el éxito de la llegada del hombre a la Luna. Hamilton es un ejemplo de cómo la tecnología y la ciencia pueden alcanzar logros extraordinarios cuando se combinan con un enfoque innovador y una visión audaz.",
-      "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/margaret-hamilton.jpg",
-      "facts": {
-        "yearOfBirth": "1936",
-        "birthPlace": "Paoli, Indiana, Estados Unidos",
-        "mainField": "Ciencia de la Computación"
-      },
-      "extraInfo": {
-        "imageSource": "https://odetta.ai/blogs/margaret-hamilton-the-first-software-engineer"
-      }
+    extraInfo: {
+      curiousFact: 'Thumper no estaba en el libro original "Bambi, una vida en el bosque", fue creado para la película.'
+    }
+  },
+  {
+    id: 'dante',
+    name: 'Dante',
+    shortDescription: 'De "Coco", es el perro de Miguel, leal y algo torpe, lo acompañará en su viaje por la Tierra de los Muertos.',
+    description: 'Dante es el perro de Miguel en la película "Coco". Con su piel sin pelo y su personalidad cómica, Dante es un perro callejero leal y amigable. Vive en el pueblo de Santa Cecilia y acompaña a Miguel en su viaje al mundo de los muertos. Dentro de la película tenemos una escena divertida de él, cuando intenta robar comida de una ofrenda durante el Día de los Muertos y termina con la cara llena de salsa, mostrando su amor por la comida deliciosa. Es juguetón, curioso y siempre está dispuesto a ayudar, a pesar de ser un poco torpe.',
+    imageUrl: '',
+    facts: {
+      species: 'Perro (Xoloitzcuintle)',
+      speciesGroup: 'Perros',
+      livesIn: 'Pueblo de Santa Cecilia',
+      filmGenre: ['Aventura', 'Fantasía', 'Musical']
     },
-    {
+    extraInfo: {
+      curiousFact: 'Dante es un Xoloitzcuintle, una raza antigua de perro mexicana.'
+    }
+  },
+  {
     id: 'sebastian',
     name: 'Sebastián',
     shortDescription: 'De la “La Sirenita”, es el cangrejo rojo con acento caribeño, maestro de música y consejero real del rey Tritón.',
@@ -361,22 +365,6 @@ export default [
     },
     extraInfo: {
       curiousFact: 'HeiHei fue originalmente concebido como un personaje inteligente y astuto, pero se cambió para ser cómico y despistado.'
-    }
-  },
-  {
-    id: 'bruno',
-    name: 'Bruno',
-    shortDescription: 'De "Cenicienta", es el perro leal y amigo de Cenicienta, sueña con atrapar a Lucifer, el gato malvado.',
-    description: 'Bruno es el leal y soñador perro de Cenicienta que aparece en la película "Cenicienta". Es un perro de grandes dimensiones con un pelaje blanco y marrón y una personalidad dulce y gentil que complementa perfectamente el ambiente del castillo. Bruno es muy cariñoso y protector, especialmente hacia Cenicienta, a quien considera su amiga más querida. Aunque sufre a manos de la madrastra y las hermanastras de Cenicienta, Bruno siempre mantiene una actitud positiva. En la película, Bruno, junto con los ratones Gus y Jaq, intenta detener a Lucifer, para que no arruine el vestido de Cenicienta.',
-    imageUrl: '',
-    facts: {
-      species: 'Perro (Bloodhound)',
-      speciesGroup: 'Perros',
-      liveIn: 'Casa de Cenicienta',
-      filmGenre: ["Fantasía", "Romance", "Musical"]
-    },
-    extraInfo: {
-      curiousFact: 'Bruno se transforma en un caballo que ayuda a Cenicienta a ir al baile.'
     }
   },
   {

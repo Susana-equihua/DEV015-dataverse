@@ -268,7 +268,7 @@ export default [
     extraInfo: {
       curiousFact: https://www.wsemexhibit.org/maria-goeppert-mayer.html
     }
-  },
+  },  
   {
     id: lise-meitner,
     name: Lise Meitner,
@@ -379,4 +379,5 @@ export default [
       curiousFact: 
     }
   }*/
+  },
 ];

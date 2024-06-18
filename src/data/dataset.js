@@ -23,7 +23,7 @@ export default [
     imageUrl: '',
     facts: {
       species: 'Camaleón',
-      speciesGroup: 'Pequeñas Criaturas',
+      speciesGroup: 'Pequeñas especies',
       livesIn: 'Torre de Rapunzel',
       filmGenre: ['Fantasía', 'Musical']
     },
@@ -39,9 +39,9 @@ export default [
     imageUrl: '',
     facts: {
       species: 'Mono (Macaco)',
-      speciesGroup: 'Pequeñas Criaturas',
+      speciesGroup: 'Pequeñas especies',
       livesIn: 'Agrabah',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Abu fue animado por el legendario animador de Disney Mark Henn.'
@@ -57,7 +57,7 @@ export default [
       species: 'Gato',
       speciesGroup: 'Gatos',
       livesIn: 'Taller de Geppetto',
-      filmGenre: ['Fantasía', 'Aventura']
+      filmGenre: ['Fantasía']
     },
     extraInfo: {
       curiousFact: 'Walt Disney estaba tan encantado con Figaro que decidió hacerlo la mascota de Minnie Mouse.'
@@ -89,7 +89,7 @@ export default [
       species: 'Caballo alado',
       speciesGroup: 'Animales Salvajes',
       livesIn: 'Olimpo',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Fue creado a partir de una nube por Zeus para ser el compañero perfecto de Hércules.'
@@ -105,7 +105,7 @@ export default [
       species: 'Pez',
       speciesGroup: 'Animales Acuáticos',
       livesIn: 'Océano Atlántico',
-      filmGenre: ['Fantasía', 'Aventura', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Flounder, a pesar de su nombre (traducido del inglés), no es un lenguado sino un pez tropical ficticio.'
@@ -121,7 +121,7 @@ export default [
       species: 'Cerdo',
       speciesGroup: 'Animales de Granja',
       livesIn: 'Isla de Motonui',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Su nombre "Pua" significa "flor" en hawaiano, reflejando su dulzura y ternura.'
@@ -137,7 +137,7 @@ export default [
       species: 'Tigre de Bengala',
       speciesGroup: 'Animales Salvajes',
       livesIn: 'Palacio de Agrabah',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Rajah fue un regalo del Sultán a Jasmín, y es tan protector que incluso asusta a los pretendientes indeseados.'
@@ -153,7 +153,7 @@ export default [
       species: 'Mapache',
       speciesGroup: 'Roedores',
       livesIn: 'Bosques de Virginia',
-      filmGenre: ['Aventura', 'Drama', 'Musical']
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Meeko tiene una debilidad por las galletas y siempre busca la manera de conseguir más.'
@@ -185,7 +185,7 @@ export default [
       species: 'Perro (Xoloitzcuintle)',
       speciesGroup: 'Perros',
       livesIn: 'Pueblo de Santa Cecilia',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Dante es un Xoloitzcuintle, una raza antigua de perro mexicana.'
@@ -201,7 +201,7 @@ export default [
       species: 'Cangrejo',
       speciesGroup: 'Animales Acuáticos',
       liveIn: 'Mar Caribe',
-      filmGenre: ['Fantasía', 'Aventura', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'La canción "Bajo el mar" interpretada por Sebastián ganó el Óscar a la Mejor Canción Original en 1989.',
@@ -217,7 +217,7 @@ export default [
       species: 'Caballo',
       speciesGroup: 'Animales de Granja',
       liveIn: 'Reino de Corona',
-      filmGenre: ['Aventura', 'Comedia', 'Musical']
+      filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Maximus fue inspirado por los perros de policía en cuanto a su comportamiento y personalidad.'
@@ -233,7 +233,7 @@ export default [
       species: 'Búho',
       speciesGroup: 'Aves',
       liveIn: 'Desconocido',
-      filmGenre: ['Fantasía', 'Aventura']
+      filmGenre: ['Fantasía']
     },
     extraInfo: {
       curiousFact: 'Archimedes es uno de los primeros personajes animados de Disney en tener una personalidad sarcástica y crítica.'
@@ -247,9 +247,9 @@ export default [
     imageUrl: '',
     facts: {
       species: 'Grillo',
-      speciesGroup: 'Pequeñas Criaturas',
+      speciesGroup: 'Pequeñas especies',
       liveIn: 'Aldea de Mulán',
-      filmGenre: ['Aventura', 'Drama', 'Musical']
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Sus sonidos fueron creados por el legendario actor de voz Frank Welker, quien también ha dado vida a personajes como Scooby-Doo y el gato Garfield.'
@@ -265,7 +265,7 @@ export default [
       species: 'Gorila',
       speciesGroup: 'Animales Salvajes',
       liveIn: 'Selva Africana',
-      filmGenre: ['Aventura', 'Drama', 'Musical']
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Terk fue originalmente escrita como un personaje masculino, pero se cambió a femenino durante el desarrollo de la película.'
@@ -281,7 +281,7 @@ export default [
       species: 'Perro (Dálmata)',
       speciesGroup: 'Perros',
       liveIn: 'Londres, Inglaterra',
-      filmGenre: ['Aventura', 'Comedia', 'Familia']
+      filmGenre: ['Comedia', 'Familia']
     },
     extraInfo: {
       curiousFact: 'Pongo y Perdita tienen en total 101 cachorros, incluyendo a los adoptados, haciendo honor al título de la película.'
@@ -297,7 +297,7 @@ export default [
       species: 'Gaviota',
       speciesGroup: 'Aves',
       liveIn: 'Océano',
-      filmGenre: ['Fantasía', 'Aventura', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Scuttle fue interpretado por el comediante Buddy Hackett, quien añadió mucho de su propio humor al personaje.'
@@ -329,7 +329,7 @@ export default [
       species: 'Gato',
       speciesGroup: 'Gatos',
       liveIn: 'Orfanato de Penny',
-      filmGenre: ['Aventura', 'Drama']
+      filmGenre: ['Drama']
     },
     extraInfo: {
       curiousFact: 'Rufus es uno de los pocos personajes de Disney que aparece con una edad avanzada desde el principio.'
@@ -345,7 +345,7 @@ export default [
       species: 'Perro (Pastor Alemán)',
       speciesGroup: 'Perros',
       liveIn: 'Set de TV de Hollywood',
-      filmGenre: ['Aventura', 'Comedia']
+      filmGenre: ['Comedia']
     },
     extraInfo: {
       curiousFact: 'Bolt fue animado utilizando una combinación de técnicas de animación por computadora y animación tradicional.'
@@ -361,7 +361,7 @@ export default [
       species: 'Gallo',
       speciesGroup: 'Aves',
       liveIn: 'Isla de Motunui',
-      filmGenre: ['Aventura', 'Fantasía', 'Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'HeiHei fue originalmente concebido como un personaje inteligente y astuto, pero se cambió para ser cómico y despistado.'

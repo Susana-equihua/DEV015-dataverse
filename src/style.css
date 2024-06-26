@@ -4,3 +4,14 @@ body {
 #title{
     color:rgb(75, 141, 221);
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap:wrap;*/
+    /*justify-content: center;*/
+}
+
+.flex.items{
+    /*order: 1;*/
+}

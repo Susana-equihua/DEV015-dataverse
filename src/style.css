@@ -11,10 +11,15 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*border: 2px dashed red;*/
+    border: 2px dashed red;
+    height: 100vh;
     background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%);
 }
-#disney-castle{}
+/*Imagen del castillo*/
+.castle{
+    width: 350px;
+    border: 2px dashed red;
+}
     
 h1{
     border: 2px dashed red;  
@@ -116,7 +121,7 @@ i {
 }
 
 /*TARJETAS*/
-#grupoTarjetas {
+#root {
     padding: 0px;
     border: 1px solid;
     display: flex;

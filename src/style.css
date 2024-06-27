@@ -1,14 +1,143 @@
+* {
+    margin: 0;
+}
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Arial';
+    width: 100%;
 }
-#title{
-    color:rgb(75, 141, 221);
-}
-.flex-container{
+
+header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px dashed red;*/
+    background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%);
+}
+#disney-castle{}
+    
+h1{
+    border: 2px dashed red;  
+}
+
+h2{
+    border: 2px dashed red;
+}
+
+#parrafoBienvenida{
+    border: 2px dashed red;
+}
+
+#btnConocelos{
+    /*border: 2px dashed red;*/
+    padding: 10px 20px;
+    background-color: #FFB80D;
+    color: white;
+    /*border: none;*/
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mainContenidoPrincipal {
+    border: 2px solid blue; /*para chequear como se está moviendo*/
+    width: auto; /*para que vaya acorde al body*/
+    background-color: #E4F3FF;
+}
+
+/*BARRA DE FILTRO Y ORDENADO*/
+#barraDeFiltroYOrden {
+    height: 75px;
+    width: 100%; /*para que vaya acorde a main*/
+    background-color: #D1EBFF; /*color del fondo*/
+    box-shadow: 0px 6px 6.2px rgba(0, 0, 0, 0.25); /*sombra*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#divFiltroyOrdenar {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 1118px;
+    max-width: 1118px;
+}
+#divFiltro {
+    display: flex; /*contenedor flexible*/
+    flex-wrap: wrap; /*para que se acomode conforme se muevan los demás elementos*/
+    align-items: center; /*los elementos (texto e icono) se alineen al centro de manera vertical*/
+}
+i {
+    color: #FFB80D; /*color del icono*/
+    font-size: 24px; /*tamaño de icono, funciona como una fuente, no como una imagen, por lo que no se le puede aplicar ancho y/o alto*/
+    padding-right: 10px;
+}
+#filter {
+    border: none; /*para que no tenga bordes*/
+    background-color: #D1EBFF; /*para que tenga el mismo color que la barra de filtro y orden*/
+    font-family: 'Poppins';
+    font-weight: bold; /*pone en negrita la letra*/
+    font-size: 16px; /*tamaño de la letra*/
+    color: #0180CB;
+    display: flex;
+}
+#divOrdenar {
+    display: flex; /*contenedor flexible*/
+    flex-wrap: wrap; /*para que se acomode conforme se muevan los demás elementos*/
+    align-items: center; /*los elementos (texto e icono) se alineen al centro de manera vertical*/
+    border: none; /*para que no tenga bordes*/
+}
+#btnUp, #btnDown {
+    background-color: #D1EBFF; /*para que tenga el mismo color que la barra de filtro y orden*/
+    border: none; /*para que no tenga bordes*/
+    padding: 0px;
+}
+#btnOrdenar {
+    font-family: 'Poppins';
+    font-weight: bold; /*pone en negrita la letra*/
+    font-size: 16px; /*tamaño de la letra*/
+    color: #0180CB;
+}
+
+/*TARJETAS*/
+#grupoTarjetas {
+    padding: 0px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.flex-container {
+    list-style: none;
+    padding: 0px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1118px; 
+    max-width: 1118px;
     flex-wrap: wrap;
 }
-.flex.items{
-    order: 1;
+
+#text-card {
+    
 }

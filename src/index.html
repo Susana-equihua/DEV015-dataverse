@@ -7,53 +7,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
-      <div class="disney-castle">
-        <img src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png" alt="Aquí había un castillo de Disney">
-      </div>
-      <div class="header-elements">
-        <div class="text-header">
-          <div class="titular">
-            <h1>
+      <div id="header-elements">
+        <div id="text-header">
+          <div id="titular">
+            <h1><img id="imgLogoDisney" src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/logo%20disney.png" alt="DISNEY">
               MASCOTAS 
             </h1>
-            <img src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/logo%20disney.png" alt="DISNEY">
+            <h2>
+              ¡BIENVENIDOS!
+            </h2>
           </div>
-          <div class="presentation-text">
-            <p>
-              ¡Bienvenidos al mágico mundo de las mascotas de Disney! Conoce las historias, aventuras y datos curiosos de los adorables compañeros de tus personajes favoritos. Desde el valiente Maximus hasta el travieso Abu, ¡explora todo lo que hace especiales a estos encantadores animales!
+          <div id="presentation-text">
+            <p id="parrafoBienvenidos">
+              Descubre el mágico mundo de las mascotas de Disney. Conoce las historias, aventuras y datos curiosos de los adorables compañeros de tus personajes favoritos de Disney. Desde el valiente Maximus hasta el travieso Abu, ¡explora todo lo que hace especiales a estos encantadores animales!
             </p>
           </div>
         </div>
-        <button>
+        <button id="btnConocelos">
           ¡Quiero conocerlos!
         </button>
       </div>
+      <div id="disney-castle">
+        <img id="imgCastilloDisney" src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png" alt="Aquí había un castillo de Disney">
+      </div>
     </header>
-    <nav>
-      <div >
-        <button id="filter"> Filtros de búsqueda
-      </button>
-      </div>
-      <div>
-      <p>Ordenar A-Z</p>
-      <button id = "up" class = "order">ascendente</button>
-      <button id = "down" class = "order">descendente</button>
-    </div>
-    </nav>
-    <aside>
-      <p> Filtra a las mascotas</p>
-      <p> Grupo de Especies </p>
-      <input type="radio">
-      <p> Grupo de Especies </p>      
-    </aside>
-    <main>
-      <h2>
-      </h2>
-      <div id = "tarjetas">
-      </div>
+    <main id="mainContenidoPrincipal">
+      <nav id="barraDeFiltroYOrden">
+        <div id="divFiltroyOrdenar">
+          <div id="divFiltro">
+            <button id="filter">
+              <i class="fas fa-bars filter-icon"></i>
+              Filtros de búsqueda
+            </button>
+          </div>
+          <div id="divOrdenar">
+            <button id = "btnUp">
+              <i class="fa-solid fa-arrow-up-a-z"></i>
+            </button>
+            <button id = "btnDown">
+              <i class="fa-solid fa-arrow-down-z-a"></i>
+            </button>
+            <label id="btnOrdenar">Ordenar</label>
+          </div>
+        </div>
+      </nav>
+      <aside>
+        <p> Filtra a las mascotas</p>
+        <p> Grupo de Especies </p>
+        <p> Grupo de Especies </p>      
+      </aside>
+    
+      <section id="grupoTarjetas"></section>
     </main>
     
     <footer>

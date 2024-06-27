@@ -19,7 +19,7 @@ export const renderItems = (data) => {
     <p> Especie: ${data.facts.species} </p>
     <p> Vive en: ${data.facts.livesIn} </p>
     <p> Genero de la película: ${data.facts.filmGenre} </p>
-    <h5> Dato curioso:
+    <h5> Dato curioso: </h5>
     <p> ${data.extraInfo.curiousFact} </p>
     `
   }); 

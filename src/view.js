@@ -14,21 +14,22 @@ export const renderItems = (data) => {
     //li.innerHTML = data; //Renderizar la base de datos de los personajes, solo aparece [Object object]
     elementLi.innerHTML = `
     <div id="text-card">
-    <div id="text">
-    <h3 id= "title">${data.name}</h3>
-    <p class="parrafoTarjetas"><span class="spanColor">Descripción: </span> ${data.shortDescription} </p>
-    <p class="parrafoTarjetas"><span class="spanColor">Especie: </span> ${data.facts.species} </p>
-    <p class="parrafoTarjetas"><span class="spanColor">Vive en: </span> ${data.facts.livesIn} </p>
-    <p class="parrafoTarjetas"><span class="spanColor">Genero de la película: </span> ${data.facts.filmGenre} </p>
-    <p class="parrafoTarjetas"><span class="fun-fact">Dato curioso:</span> ${data.extraInfo.curiousFact} </p>
-    </div>
-    <div id="divFondoPersonaje">
-    <img class="imgPersonaje" src = ${data.imageUrl} alt = "Aquí estaba ${data.name}">  
-    </div>
+      <div id="text">
+        <p id="textoDeTarjetas">
+          <span id="spanName">Conoce a ${data.name}:</span><br>
+          ${data.shortDescription}<br>
+          <span class="spanFacts">Especie: </span> ${data.facts.species}<br>
+          <span class="spanFacts">Vive en: </span> ${data.facts.livesIn}<br>
+          <span class="spanFacts">Género de la película: </span> ${data.facts.filmGenre}<br><br>
+          <span class="fun-fact">Dato curioso:</span> ${data.extraInfo.curiousFact}<br>
+        </p>
+      </div>
+      <div id="divFondoPersonaje">
+        <img class="imgPersonaje" src = ${data.imageUrl} alt = "Aquí estaba ${data.name}">  
+      </div>
     </div>
     `
   }); 
-
+  
   return elementUl   //Retornar el elemento <ul>
 };
-

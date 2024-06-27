@@ -138,6 +138,45 @@ i {
     flex-wrap: wrap;
 }
 
+/*TARJETAS INDIVIDUALES - TEXTO*/
 #text-card {
-    border-color: #01387F;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 343px;
+    max-width: 343px;
+    height: 621px;
+    max-height: 621px;
+    background-color: #FFFFFF;
+    border-radius: 70px;
+    box-shadow: 0px 3px 9.7px 3px rgba(0, 0, 0, 0.27);
+}
+#text {
+    display: flex;
+    width: 301px;
+    max-width: 301px;
+    height: 300px;
+    max-height: 300px;
+}
+#textoDeTarjetas {
+    color: #333333;
+}
+#spanName {
+    color: #FFB80D;
+    font-weight: bold;
+    font-size: 20px;
+}
+.spanFacts {
+    color: #01387F;
+    font-weight: bold;
+}
+
+/*IMAGENES*/
+#divFondoPersonaje {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.imgPersonaje {
+   display: flex;
+   max-width: 100%; 
 }

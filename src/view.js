@@ -30,6 +30,8 @@ export const renderItems = (data) => {
     </div>
     `
   }); 
-  
   return elementUl   //Retornar el elemento <ul>
+
+  // Aquí comienza tu código y puedes retornar lo que tu necesites
+  return 'example';
 };

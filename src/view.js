@@ -9,7 +9,7 @@ export const renderItems = (data) => {
     console.log(elementLi);
     elementUl.appendChild(elementLi);//Agregar cada <li> al <ul> con appenChild u otro metodo apropiado
     console.log(elementUl);
-    const elementSection = document.querySelector('section[id="grupoTarjetas"]'); //Crear un elemento HTML y llamarlo con un selector del DOM
+    const elementSection = document.querySelector('section[id="root"]'); //Crear un elemento HTML y llamarlo con un selector del DOM
     elementSection.appendChild(elementUl);  //Situar la lista no ordenada (ul) dentro de la etiqueta div
     //li.innerHTML = data; //Renderizar la base de datos de los personajes, solo aparece [Object object]
     elementLi.innerHTML = `
@@ -21,7 +21,7 @@ export const renderItems = (data) => {
           <span class="spanFacts">Especie: </span> ${data.facts.species}<br>
           <span class="spanFacts">Vive en: </span> ${data.facts.livesIn}<br>
           <span class="spanFacts">Género de la película: </span> ${data.facts.filmGenre}<br><br>
-          <span class="fun-fact">Dato curioso:</span> ${data.extraInfo.curiousFact}<br>
+          <span class="fun-fact">Dato curioso:</span><span class="spanFunFact"> ${data.extraInfo.curiousFact}</span>
         </p>
       </div>
       <div id="divFondoPersonaje">

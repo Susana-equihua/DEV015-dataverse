@@ -32,7 +32,7 @@
         </button>
       </div>
       <div id="disney-castle">
-        <img id="imgCastilloDisney" src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png" alt="Aquí había un castillo de Disney">
+        <img id="imgCastilloDisney" class="castle" src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png" alt="Aquí había un castillo de Disney">
       </div>
     </header>
     <main id="mainContenidoPrincipal">
@@ -56,12 +56,35 @@
         </div>
       </nav>
       <aside>
-        <p> Filtra a las mascotas</p>
-        <p> Grupo de Especies </p>
-        <p> Grupo de Especies </p>      
-      </aside>
-    
-      <section id="root"></section>
+        <p>FILTRA A TUS PERSONAJES</p>      
+
+        <label for="specie">Tipo de mascota:</label>
+        <select name="speciesGroup" id="specie" data-testid="select-filter">
+          <option value="opcion">Elige una opción</option>
+          <option value="perros">Perros</option>
+          <option value="gatos">Gatos</option>
+          <option value="pequeñasEspecies">Pequeñas especies</option>
+          <option value="animalesSalvajes">Animales salvajes</option>
+          <option value="animalesAcuaticos">Animales acuáticos</option>
+          <option value="animalesDeGranja">Animales de granja</option>
+          <option value="roedores">Roedores</option>
+          <option value="aves">Aves</option>          
+        </select>
+               
+        <label for="labelFilmGenre">Pertenece a una película de:</label>
+        <select name="filmGenre" id="filmselect" data-testid="select-filter">
+          <option value="opcion">Elige una opción</option>
+          <option value="comedia">Comedia</option>
+          <option value="infantil">Infantil</option>
+          <option value="fantasia">Fantasía</option>
+          <option value="musical">Musical</option>
+          <option value="drama">Drama</option>
+          <option value="romance">Romance</option>
+        </select>
+        <button id="btnLimpiar" data-testid="button-clear">Limpiar filtros</button>
+   
+      </aside>    
+      <section id="root"></section>      
     </main>
     
     <footer>

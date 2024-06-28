@@ -15,14 +15,14 @@ export const renderItems = (data) => {
     elementLi.innerHTML = `
     <div id="text-card">
       <div id="text">
-        <p id="textoDeTarjetas">
-          <span id="spanName">Conoce a ${data.name}:</span><br>
-          ${data.shortDescription}<br>
-          <span class="spanFacts">Especie: </span> ${data.facts.species}<br>
-          <span class="spanFacts">Vive en: </span> ${data.facts.livesIn}<br>
-          <span class="spanFacts">Género de la película: </span> ${data.facts.filmGenre}<br><br>
-          <span class="fun-fact">Dato curioso:</span><span class="spanFunFact"> ${data.extraInfo.curiousFact}</span>
-        </p>
+        <dl id="textoDeTarjetas" itemscop itemtype = "mascotasDisney">
+          <dt id="spanName">Conoce a <span itemprop="name">${data.name}</span>:</dt>
+          <dd itemprop="shortDescription">${data.shortDescription}</dd>
+          <dd><span class="spanFacts">Especie: </span><span itemprop="species">${data.facts.species}</span></dd>
+          <dd><span class="spanFacts">Vive en: </span><span itemprop="livesIn">${data.facts.livesIn}</span></dd>
+          <dd><span class="spanFacts">Género de la película: </span><span itemprop="filmGenre">${data.facts.filmGenre}</span></dd><br>
+          <dd><span class="fun-fact">Dato curioso:</span><span itemprop="curiousFact"> ${data.extraInfo.curiousFact}</span><dd>
+        </dl>
       </div>
       <div id="divFondoPersonaje">
         <img class="imgPersonaje" src = ${data.imageUrl} alt = "Aquí estaba ${data.name}">  
@@ -33,5 +33,6 @@ export const renderItems = (data) => {
   return elementUl   //Retornar el elemento <ul>
 
   // Aquí comienza tu código y puedes retornar lo que tu necesites
-  return 'example';
+  //return 'example';
+
 };

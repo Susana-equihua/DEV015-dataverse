@@ -15,14 +15,14 @@ export const renderItems = (data) => {
     elementLi.innerHTML = `
     <div id="text-card">
       <div id="text">
-        <p id="textoDeTarjetas">
-          <span id="spanName">Conoce a ${data.name}:</span><br>
+        <dl id="textoDeTarjetas">
+          <dt id="spanName">Conoce a ${data.name}:</dt>
           ${data.shortDescription}<br>
-          <span class="spanFacts">Especie: </span> ${data.facts.species}<br>
-          <span class="spanFacts">Vive en: </span> ${data.facts.livesIn}<br>
+          <dd><span class="spanFacts">Especie: </span><span>${data.facts.species}</span></dd>
+          <dd><span class="spanFacts">Vive en: </span>${data.facts.livesIn}</dd>
           <span class="spanFacts">Género de la película: </span> ${data.facts.filmGenre}<br><br>
           <span class="fun-fact">Dato curioso:</span><span class="spanFunFact"> ${data.extraInfo.curiousFact}</span>
-        </p>
+        </dl>
       </div>
       <div id="divFondoPersonaje">
         <img class="imgPersonaje" src = ${data.imageUrl} alt = "Aquí estaba ${data.name}">  

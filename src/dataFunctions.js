@@ -10,26 +10,40 @@
 //5) Dentro del metodo crear la condicion de filtrado (grupo de especies)
 //6) Resultado: obtener un nuevo arreglo (dataFiltrada)
 //7) El nuevo arreglo contiene solo a los personajes que cumplen con la condicion
-//Console.log, mostrará en la consola la data filtrada 
-    
-export const filterData = (data, filterBy, value) =>{
-  if (filterBy === 'gender'){
-    const filterGender = data.filter(item => item.facts.gender === value);
-    return filterGender;
-  } 
-  
-  if (filterBy === 'speciesGroup'){
-    const filterSpecies = data.filter(item => item.facts.speciesGroup === value);
-    return filterSpecies;
-  } 
+//Console.log, mostrará en la consola la data filtrada
 
-  if (filterBy === 'filmGenre'){
-    const filterGenre = data.filter(item => item.facs.filmGenre.includes(value));
+export const filterData = (data, filterBy, value) => {
+  if (filterBy === "gender") {
+    const filterGender = data.filter((item) => item.facts.gender === value);
+    return filterGender;
+  }
+
+  if (filterBy === "speciesGroup") {
+    const filterSpecies = data.filter(
+      (item) => item.facts.speciesGroup === value
+    );
+    return filterSpecies;
+  }
+
+  if (filterBy === "filmGenre") {
+    const filterGenre = data.filter((item) =>
+      item.facts.filmGenre.includes(value)
+    );
     return filterGenre;
   }
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  sortBy === 'name'
-
+ if (sortBy === 'name'){ 
+    data.sort(function (a, b) {
+    if (a.sortBy > b.sortBy) {            //falta el parametro sortOrder
+      //return sortOrder === 'asc' 1;
+      return 1;
+    }
+    if (a.name < b.name) {     
+      return -1;
+    }
+    return 0;
+  });
+};
 };

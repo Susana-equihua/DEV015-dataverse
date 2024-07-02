@@ -8,8 +8,9 @@ export default [
     facts: {
       species: 'Perro (Bloodhound)',
       speciesGroup: 'Perros',
+      gender: 'Macho',
       livesIn: 'Casa de Mickey Mouse',
-      filmGenre: ['Comedia', ' Infantil']
+      filmGenre: ['Comedia', 'Infantil']
     },
     extraInfo: {
       curiousFact: 'Pluto debutó en 1930 y originalmente era el perro de Minnie llamado Rover.'
@@ -24,6 +25,7 @@ export default [
     facts: {
       species: 'Camaleón',
       speciesGroup: 'Pequeñas especies',
+      gender: 'Macho',
       livesIn: 'Torre de Rapunzel',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -40,6 +42,7 @@ export default [
     facts: {
       species: 'Mono (Macaco)',
       speciesGroup: 'Pequeñas especies',
+      gender: 'Macho',
       livesIn: 'Agrabah',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -56,6 +59,7 @@ export default [
     facts: {
       species: 'Gato',
       speciesGroup: 'Gatos',
+      gender: 'Macho',
       livesIn: 'Taller de Geppetto',
       filmGenre: ['Fantasía']
     },
@@ -72,6 +76,7 @@ export default [
     facts: {
       species: 'Reno',
       speciesGroup: 'Animales Salvajes',
+      gender: 'Macho',
       livesIn: 'Arendelle',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -88,6 +93,7 @@ export default [
     facts: {
       species: 'Caballo alado',
       speciesGroup: 'Animales Salvajes',
+      gender: 'Macho',
       livesIn: 'Olimpo',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -104,6 +110,7 @@ export default [
     facts: {
       species: 'Pez',
       speciesGroup: 'Animales Acuáticos',
+      gender: 'Macho',
       livesIn: 'Océano Atlántico',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -120,6 +127,7 @@ export default [
     facts: {
       species: 'Cerdo',
       speciesGroup: 'Animales de Granja',
+      gender: 'Macho',
       livesIn: 'Isla de Motonui',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -136,6 +144,7 @@ export default [
     facts: {
       species: 'Tigre de Bengala',
       speciesGroup: 'Animales Salvajes',
+      gender: 'Macho',
       livesIn: 'Palacio de Agrabah',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -152,6 +161,7 @@ export default [
     facts: {
       species: 'Mapache',
       speciesGroup: 'Roedores',
+      gender: 'Macho',
       livesIn: 'Bosques de Virginia',
       filmGenre: ['Drama', ' Musical']
     },
@@ -168,6 +178,7 @@ export default [
     facts: {
       species: 'Conejo',
       speciesGroup: 'Animales Salvajes',
+      gender: 'Macho',
       livesIn: 'Bosque',
       filmGenre: ['Drama', ' Infantil']
     },
@@ -184,6 +195,7 @@ export default [
     facts: {
       species: 'Perro (Xoloitzcuintle)',
       speciesGroup: 'Perros',
+      gender: 'Macho',
       livesIn: 'Pueblo de Santa Cecilia',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -200,6 +212,7 @@ export default [
     facts: {
       species: 'Cangrejo',
       speciesGroup: 'Animales Acuáticos',
+      gender: 'Macho',
       liveIn: 'Mar Caribe',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -216,6 +229,7 @@ export default [
     facts: {
       species: 'Caballo',
       speciesGroup: 'Animales de Granja',
+      gender: 'Macho',
       liveIn: 'Reino de Corona',
       filmGenre: ['Comedia', ' Musical']
     },
@@ -232,6 +246,7 @@ export default [
     facts: {
       species: 'Búho',
       speciesGroup: 'Aves',
+      gender: 'Macho',
       liveIn: 'Desconocido',
       filmGenre: ['Fantasía']
     },
@@ -248,6 +263,7 @@ export default [
     facts: {
       species: 'Grillo',
       speciesGroup: 'Pequeñas especies',
+      gender: 'Macho',
       liveIn: 'Aldea de Mulán',
       filmGenre: ['Drama', ' Musical']
     },
@@ -264,6 +280,7 @@ export default [
     facts: {
       species: 'Gorila',
       speciesGroup: 'Animales Salvajes',
+      gender: 'Hembra',
       liveIn: 'Selva Africana',
       filmGenre: ['Drama', ' Musical']
     },
@@ -280,6 +297,7 @@ export default [
     facts: {
       species: 'Perro (Dálmata)',
       speciesGroup: 'Perros',
+      gender: 'Macho',
       liveIn: 'Londres, Inglaterra',
       filmGenre: ['Comedia', ' Familia']
     },
@@ -296,6 +314,7 @@ export default [
     facts: {
       species: 'Gaviota',
       speciesGroup: 'Aves',
+      gender: 'Macho',
       liveIn: 'Océano',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -312,6 +331,7 @@ export default [
     facts: {
       species: 'Ratones',
       speciesGroup: 'Roedores',
+      gender: 'Macho',
       liveIn: 'Casa de Cenicienta',
       filmGenre: ['Fantasía', ' Romance', ' Musical']
     },
@@ -328,6 +348,7 @@ export default [
     facts: {
       species: 'Gato',
       speciesGroup: 'Gatos',
+      gender: 'Macho',
       liveIn: 'Orfanato de Penny',
       filmGenre: ['Drama']
     },
@@ -344,6 +365,7 @@ export default [
     facts: {
       species: 'Perro (Pastor Alemán)',
       speciesGroup: 'Perros',
+      gender: 'Macho',
       liveIn: 'Set de TV de Hollywood',
       filmGenre: ['Comedia']
     },
@@ -360,6 +382,7 @@ export default [
     facts: {
       species: 'Gallo',
       speciesGroup: 'Aves',
+      gender: 'Macho',
       liveIn: 'Isla de Motunui',
       filmGenre: ['Fantasía', ' Musical']
     },
@@ -376,6 +399,7 @@ export default [
     facts: {
       species: 'Perro (Bloodhound)',
       speciesGroup: 'Perros',
+      gender: 'Macho',
       liveIn: 'Casa de Cenicienta',
       filmGenre: ["Fantasía", " Romance", " Musical"]
     },

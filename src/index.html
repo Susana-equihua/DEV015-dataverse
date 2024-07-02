@@ -58,28 +58,43 @@
       <aside>
         <p>FILTRA A TUS PERSONAJES</p>      
 
-        <label for="specie">Tipo de mascota:</label>
-        <select name="speciesGroup" id="specieselect" data-testid="select-filter">
+        <label for="sort-select">Orden alfabético:</label>
+        <select name="ordenar" id="sort-select" data-testid="select-filter">
           <option value="opcion">Elige una opción</option>
-          <option value="perros">Perros</option>
-          <option value="gatos">Gatos</option>
-          <option value="pequeñasEspecies">Pequeñas especies</option>
-          <option value="animalesSalvajes">Animales salvajes</option>
-          <option value="animalesAcuaticos">Animales acuáticos</option>
-          <option value="animalesDeGranja">Animales de granja</option>
-          <option value="roedores">Roedores</option>
-          <option value="aves">Aves</option>          
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>        
+        </select>
+
+
+        <label for="gender-select">Género:</label>
+        <select name="genero" id="gender-select" data-testid="select-filter">
+          <option value="opcion">Elige una opción</option>
+          <option value="Hembra">Hembra</option>
+          <option value="Macho">Macho</option>        
+        </select>
+
+        <label for="specie-select">Tipo de mascota:</label>
+        <select name="speciesGroup" id="specie-select" data-testid="select-filter">
+          <option value="opcion">Elige una opción</option>
+          <option value="Perros">Perros</option>
+          <option value="Gatos">Gatos</option>
+          <option value="Pequeñas especies">Pequeñas especies</option>
+          <option value="Animales Salvajes">Animales salvajes</option>
+          <option value="Animales Acuáticos">Animales acuáticos</option>
+          <option value="Animales de Granja">Animales de granja</option>
+          <option value="Roedores">Roedores</option>
+          <option value="Aves">Aves</option>          
         </select>
                
-        <label for="labelFilmGenre">Pertenece a una película de:</label>
-        <select name="filmGenre" id="filmselect" data-testid="select-filter">
+        <label for="film-select">Pertenece a una película de:</label>
+        <select name="filmGenre" id="film-select" data-testid="select-filter">
           <option value="opcion">Elige una opción</option>
-          <option value="comedia">Comedia</option>
-          <option value="infantil">Infantil</option>
-          <option value="fantasia">Fantasía</option>
-          <option value="musical">Musical</option>
-          <option value="drama">Drama</option>
-          <option value="romance">Romance</option>
+          <option value="Comedia">Comedia</option>
+          <option value="Infantil">Infantil</option>
+          <option value="Fantasía">Fantasía</option>
+          <option value="Musical">Musical</option>
+          <option value="Drama">Drama</option>
+          <option value="Romance">Romance</option>
         </select>
         <button id="btnLimpiar" data-testid="button-clear">Limpiar filtros</button>
    

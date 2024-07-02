@@ -1,43 +1,35 @@
+/*Funcion filterData(data, filterBy, value), recibe tres parámetros: 
+  El primer parámetro, data, nos entrega los datos. ¿del dataset?
+  El segundo parámetro, filterBy, nos dice con respecto a cuál de los campos de la data se quiere filtrar (speciesGroup)
+  El tercer parámetro, value, indica el valor de campo que queremos filtrar.  */
 
-export const filterData = (data, filterBy, value) => {
-  console.log(data, filterBy, value)
+//1) Definir un arreglo, cada objeto con sus propiedades / const functionData = (data)->arreglo de mascotas
+//2) Definir una variable que guarde la función del filtrado
+//3) Usar método filter() / data.filter
+//4) El metodo se aplica sobre el arreglo
+//5) Dentro del metodo crear la condicion de filtrado (grupo de especies)
+//6) Resultado: obtener un nuevo arreglo (dataFiltrada)
+//7) El nuevo arreglo contiene solo a los personajes que cumplen con la condicion
+//Console.log, mostrará en la consola la data filtrada 
+    
+export const filterData = (data, filterBy, value) =>{
+  if (filterBy === 'gender'){
+    const filterGender = data.filter(item => item.facts.gender === value);
+    return filterGender;
+  } 
+  
+  if (filterBy === 'speciesGroup'){
+    const filterSpecies = data.filter(item => item.facts.speciesGroup === value);
+    return filterSpecies;
+  } 
+
+  if (filterBy === 'filmGenre'){
+    const filterGenre = data.filter(item => item.facs.filmGenre.includes(value));
+    return filterGenre;
+  }
 };
 
-/*1. Crear una variable para asignarle el array de objetos
-const mascotasDisney = data
-2. Una nueva variable para guardar la función: 
-let disneyMascotas = mascotasDisney
-2.1. Aplicar el método .filter() para crear el nuevo array: 
-let disneyMascotas = mascotasDisney.filter()
-2.2. El metodo filter toma una función como argumento. Esta se
-aplica por cada objeto del array.
-2.3. La función toma un parámetro que representará el objeto actual
-de la iteración: 
-let disneyMascotas = mascotasDisney.filter(function(personaje) {
-return personaje.filterBy
-})
-*/
+export const sortData = (data, sortBy, sortOrder) => {
+  sortBy === 'name'
 
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-
-/*import dataset from "./data/dataset";*/
-/*Funcion filterData(data, filterBy, value), recibe tres parámetros: 
-El primer parámetro, data, nos entrega los datos. ¿del dataset?
-El segundo parámetro, filterBy, nos dice con respecto a cuál de los campos de la data se quiere filtrar. 
-El tercer parámetro, value, indica el valor de campo que queremos filtrar.*/
-
-/*function filterData(data, filterBy, value){
-  //filter() Este método crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
-  const perros = data.filter(dataset.speciesGroup === 'value,Perros') 
-  console.log(perros)
-  return perros;
-}
-return 'filterSpecies';*/
-//export const filterGenre = () => {
-  //return [];
-  //};
-  //export const sortAZ = () => {
-    
-    
-    // return [];
-    //};
+};

@@ -34,16 +34,18 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
- if (sortBy === 'name'){ 
+  if (sortBy === 'name'){ 
     data.sort(function (a, b) {
-    if (a.sortBy > b.sortBy) {            //falta el parametro sortOrder
-      //return sortOrder === 'asc' 1;
-      return 1;
-    }
-    if (a.name < b.name) {     
-      return -1;
-    }
-    return 0;
-  });
-};
+      if (sortOrder === 'ascendente'){       //Añadir el parametro sortOrder ascendente
+        if (a.name < b.name) return -1;      //a aparece antes  
+        if (a.name > b.name) return 1;       //b aparece antes     
+      }
+      if (sortOrder === 'descendente'){      //Añadir el parametro sortOrder descendente; la lógica de invierte
+        if (a.name < b.name) return 1;       //a aparece antes  
+        if (a.name > b.name) return -1;      //b aparece antes     
+      }
+      return 0;                              //si son iguales no se cambia el orden 
+    });
+    return data                              //retornar la data ordenada
+  }
 };

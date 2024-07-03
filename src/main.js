@@ -1,9 +1,8 @@
-import { filterData } from './dataFunctions.js';
+import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
 //console.log(filterData, renderItems(data), data);
-import { sortData } from './dataFunctions.js';
  
 //Ubicar en dónde se va a posicionar el renderItems en la página: <section id="root">
 const elementSection = document.querySelector('section[id="root"]'); //Crear un elementoHTML(<section id="root">) y llamarlo con un selector del DOM
@@ -36,8 +35,14 @@ filterFilmGenre.addEventListener('change',function(event){
 
 
 //Manejo del DOM para ordenar por orden alfabético
-const ordenarData = document.getElementById('sort-select');
-ordenarData.addEventListener('change', function(event){
+const ordenarDataAsc = document.getElementById('btnUp');
+ordenarDataAsc.addEventListener('click', function(event){
+ const ordenAsc = event.target
+});
+
+const ordenarDataDesc = document.getElementById('btnDown');
+
+/*ordenarData.addEventListener('change', function(event){
 elementSection.innerHTML = '';
 const ordenSeleccionado = event.target.value
   //Crear una condicional para ascendente y descendente
@@ -46,4 +51,4 @@ if(){         //si es seleccionada la opcion de forma ascendente que se muestre 
 } else{       ////si es seleccionada la opcion de forma ascendente que se muestre la data de la Z-A
 
 }
-});
+});*/

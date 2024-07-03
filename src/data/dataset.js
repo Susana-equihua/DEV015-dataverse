@@ -213,7 +213,7 @@ export default [
       species: 'Cangrejo',
       speciesGroup: 'Animales Acuáticos',
       gender: 'Macho',
-      liveIn: 'Mar Caribe',
+      livesIn: 'Mar Caribe',
       filmGenre: ['Fantasía', ' Musical']
     },
     extraInfo: {
@@ -230,7 +230,7 @@ export default [
       species: 'Caballo',
       speciesGroup: 'Animales de Granja',
       gender: 'Macho',
-      liveIn: 'Reino de Corona',
+      livesIn: 'Reino de Corona',
       filmGenre: ['Comedia', ' Musical']
     },
     extraInfo: {
@@ -247,7 +247,7 @@ export default [
       species: 'Búho',
       speciesGroup: 'Aves',
       gender: 'Macho',
-      liveIn: 'Desconocido',
+      livesIn: 'Desconocido',
       filmGenre: ['Fantasía']
     },
     extraInfo: {
@@ -264,7 +264,7 @@ export default [
       species: 'Grillo',
       speciesGroup: 'Pequeñas especies',
       gender: 'Macho',
-      liveIn: 'Aldea de Mulán',
+      livesIn: 'Aldea de Mulán',
       filmGenre: ['Drama', ' Musical']
     },
     extraInfo: {
@@ -281,7 +281,7 @@ export default [
       species: 'Gorila',
       speciesGroup: 'Animales Salvajes',
       gender: 'Hembra',
-      liveIn: 'Selva Africana',
+      livesIn: 'Selva Africana',
       filmGenre: ['Drama', ' Musical']
     },
     extraInfo: {
@@ -298,7 +298,7 @@ export default [
       species: 'Perro (Dálmata)',
       speciesGroup: 'Perros',
       gender: 'Macho',
-      liveIn: 'Londres, Inglaterra',
+      livesIn: 'Londres, Inglaterra',
       filmGenre: ['Comedia', ' Familia']
     },
     extraInfo: {
@@ -315,7 +315,7 @@ export default [
       species: 'Gaviota',
       speciesGroup: 'Aves',
       gender: 'Macho',
-      liveIn: 'Océano',
+      livesIn: 'Océano',
       filmGenre: ['Fantasía', ' Musical']
     },
     extraInfo: {
@@ -332,7 +332,7 @@ export default [
       species: 'Ratones',
       speciesGroup: 'Roedores',
       gender: 'Macho',
-      liveIn: 'Casa de Cenicienta',
+      livesIn: 'Casa de Cenicienta',
       filmGenre: ['Fantasía', ' Romance', ' Musical']
     },
     extraInfo: {
@@ -349,7 +349,7 @@ export default [
       species: 'Gato',
       speciesGroup: 'Gatos',
       gender: 'Macho',
-      liveIn: 'Orfanato de Penny',
+      livesIn: 'Orfanato de Penny',
       filmGenre: ['Drama']
     },
     extraInfo: {
@@ -366,7 +366,7 @@ export default [
       species: 'Perro (Pastor Alemán)',
       speciesGroup: 'Perros',
       gender: 'Macho',
-      liveIn: 'Set de TV de Hollywood',
+      livesIn: 'Set de TV de Hollywood',
       filmGenre: ['Comedia']
     },
     extraInfo: {
@@ -383,7 +383,7 @@ export default [
       species: 'Gallo',
       speciesGroup: 'Aves',
       gender: 'Macho',
-      liveIn: 'Isla de Motunui',
+      livesIn: 'Isla de Motunui',
       filmGenre: ['Fantasía', ' Musical']
     },
     extraInfo: {
@@ -400,7 +400,7 @@ export default [
       species: 'Perro (Bloodhound)',
       speciesGroup: 'Perros',
       gender: 'Macho',
-      liveIn: 'Casa de Cenicienta',
+      livesIn: 'Casa de Cenicienta',
       filmGenre: ["Fantasía", " Romance", " Musical"]
     },
     extraInfo: {

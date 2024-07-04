@@ -23,7 +23,7 @@ export const filterData = (data, filterBy, value) => {
       (item) => item.facts.speciesGroup === value
     );
     return filterSpecies;
-  }
+  } 
 
   if (filterBy === "filmGenre") {
     const filterGenre = data.filter((item) =>
@@ -34,16 +34,28 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
- if (sortBy === 'name'){ 
-    data.sort(function (a, b) {
-    if (a.sortBy > b.sortBy) {            //falta el parametro sortOrder
-      //return sortOrder === 'asc' 1;
-      return 1;
-    }
-    if (a.name < b.name) {     
-      return -1;
-    }
-    return 0;
-  });
+  if (sortBy === 'name'){
+    data.sort(function(a, b){
+      if (sortOrder === 'asc'){
+        return a.name.localeCompare(b.name)
+      } else if (sortOrder == 'desc'){
+        return b.name.localeCompare(a.name)
+      }
+      return 0
+    })
+  };
+  return data
 };
-};
+
+  /*if (sortBy === 'name'){ 
+      data.sort(function (a, b) {
+      if (a.sortBy > b.sortBy) {            //falta el parametro sortOrder
+        //return sortOrder === 'asc' 1;
+        return 1;
+      }
+      if (a.name < b.name) {     
+        return -1;
+      }
+      return 0;
+    });
+  };*/

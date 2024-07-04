@@ -2,8 +2,7 @@ import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
-//console.log(filterData, renderItems(data), data);
- 
+
 //Ubicar en dónde se va a posicionar el renderItems en la página: <section id="root">
 const elementSection = document.querySelector('section[id="root"]');    //Crear un elementoHTML(<section id="root">) y llamarlo con un selector del DOM
 elementSection.appendChild(renderItems(data));                          //Situar la lista no ordenada (ul) de view.js dentro de la etiqueta section con la constante renderItems(data)
@@ -37,6 +36,7 @@ filterFilmGenre.addEventListener('change',function(event){
 
 
 //Manejo del DOM para ordenar por orden alfabético
+
 const sortDataAsc = document.getElementById('btnUp');                  //Llamar al botón de orden ascendente
 sortDataAsc.addEventListener('click', function(){                      //Escuchar el evento click sobre el boton de ordenar ascendente
   elementSection.innerHTML = '';                                       //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection

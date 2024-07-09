@@ -11,7 +11,7 @@ elementSection.appendChild(renderItems(data));                          //Situar
 let filteredData = data;                                                //Variable de tipo let para guardar la data filtrada 
 
 //Manejo del DOM para detectar la interaccion de la usuaria con los filtros
-const filterSpecies = document.getElementById('specie-select');         //Llamar el elemento select con un selector DOM (con su id="root") y guardarlo en una constante
+const filterSpecies = document.querySelector('select[id=specie-select]');           //Llamar el elemento select con un selector DOM (con su id="root") y guardarlo en una constante
 filterSpecies.addEventListener('change',function(event){                //Esuchar el evento change sobre el select del filtro por especie 
   elementSection.innerHTML = '';                                        //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
   const valorSeleccionado = event.target.value;                         //Constante para guardar el valor que seleccione al usuario, será el dato asignado a value
@@ -19,7 +19,7 @@ filterSpecies.addEventListener('change',function(event){                //Esucha
   elementSection.appendChild(renderItems(filteredData));                //Llamar a renderItems y pasarle como parametro la const filteredDataSpecies
 }); 
 
-const filterGender = document.getElementById('gender-select');   
+const filterGender = document.querySelector('select[id=gender-select]');     
 filterGender.addEventListener('change',function(event){   
   elementSection.innerHTML = '';    
   const valorSeleccionado = event.target.value;  
@@ -27,7 +27,7 @@ filterGender.addEventListener('change',function(event){
   elementSection.appendChild(renderItems(filteredData)); 
 }); 
 
-const filterFilmGenre = document.getElementById('film-select');   
+const filterFilmGenre = document.querySelector('select[id=film-select]');  
 filterFilmGenre.addEventListener('change',function(event){   
   elementSection.innerHTML = '';    
   const valorSeleccionado = event.target.value;  
@@ -37,14 +37,14 @@ filterFilmGenre.addEventListener('change',function(event){
 
 
 //Manejo del DOM para ordenar por orden alfabético
-const sortDataAsc = document.getElementById('btnUp');                  //Llamar al botón de orden ascendente
+const sortDataAsc = document.querySelector('button[id=btnDown]');                  //Llamar al botón de orden ascendente
 sortDataAsc.addEventListener('click', function(){                      //Escuchar el evento click sobre el boton de ordenar ascendente
   elementSection.innerHTML = '';                                       //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
   const ordenAsc = sortData([...filteredData], 'name', 'ascendente');       //Constante para guardar la funcion de sortData con se le pasa como parametro filteredData
   elementSection.appendChild(renderItems(ordenAsc));                   //Llamar a renderItems y pasarle como parametro la const ordenAsc
 });
 
-const sortDataDesc = document.getElementById('btnDown');
+const sortDataDesc = document.querySelector('button[id=btnDown]');
 sortDataDesc.addEventListener('click', function(){
   elementSection.innerHTML = ''; 
   const ordenDesc = sortData([...filteredData], 'name', 'descendente'); 
@@ -52,7 +52,7 @@ sortDataDesc.addEventListener('click', function(){
 });
 
 //Manejo de DOM para el botón de limpiar filtros
-const filterClear = document.getElementById('btnClear');              //Llamar al button
+const filterClear = document.querySelector('button[id=btnClear]');              //Llamar al button
 filterClear.addEventListener('click', function(){                     //Escuchar el evento click
   elementSection.innerHTML = '';                                      // Vaciar el contenido de elementSection; vaciar el contenido del section que muestra la data
   elementSection.appendChild(renderItems(data));                      // Renderizar a la data original

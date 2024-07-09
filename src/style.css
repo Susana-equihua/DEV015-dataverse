@@ -1,117 +1,184 @@
+ /*Toda la ventana de la página*/
 * {
-    margin: 0;
+    box-sizing: border-box;                    /*Es una propiedad que cuando se agrega margin, padding o border en los elementos no crezca más alla del tamaño que le demos*/                              
 }
-body {
-    font-family: 'Poppins', 'Arial';
+/*El CUERPO de la pagina*/
+body {                                          
+    font-family: 'Poppins', 'Arial';            /*Fuente de la letra sobre la página*/
+    margin: 0;                                /*Ancho del body de la página*/
+}
+/*ENCABEZADO */
+header{                                         
+    display: flex;                               /*Para que el display sea flexible*/
+    flex-direction: row;                         /*Direccion horizontal hacia la derecha*/
+    justify-content: flex-start;            /*Alineación de los hijos en el eje horizontal los elementos se distribuyen uniformemente en la línea*/
+    align-items: center;                         /*Alineación de los hijos en el eje vertical*/
+    border: 2px dashed red;                    /*Borde para identificarlo*/
+    min-height: 50vh;                               /*El elemento va a ocupar toda la altura visible del navegador*/
+    background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%); /*Fondo*/
     width: 100%;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /*border: 2px dashed red;*/
-    height: 100vh;
-    background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%);
-}
-/*Imagen del castillo*/
-.castle{
-    width: 350px;
-    border: 2px dashed red;
-}
-    
+/*TITULO DE LA PÁGINA*/  
 h1{
-    /*border: 2px dashed red;*/  
+    font-size: 2em;
+    border: 2px dashed red;                    /*Borde para identificarlo*/
+    display: flex;
+    align-items: center;
+    margin: 15px;
 }
+#imgLogoDisney{
+    height: 50px;
+    margin-right: 15px;
+}
+/*IMAGEN DEL CASTILLO*/
+#imgCastilloDisney{
+    display: flex;
+    margin: 15px;
+}
+.castle{
+    width: 350px;                                /*Ancho de la imagen*/
+    border: 2px dashed red;                    /*Borde para identificarlo*/
+}
+/*SUBTITULO DE BIENVENIDA*/
 h2{
+    font-size: 1.70em;
     border: 2px dashed red;
+    margin: 15px;                    /*Borde para identificarlo*/
 }
-#parrafoBienvenida{
-    border: 2px dashed red;
+/*Texto de bienvenida*/
+#parrafoBienvenidos{
+    border: 2px dashed rgb(63, 58, 58);                    /*Borde para identificarlo*/
+    margin: 15px;
+    font-size: 1em;
 }
-#btnConocelos{
-    /*border: 2px dashed red;*/
+/*BOTON PARA CONOCER A LAS MASCOTAS*/
+#btnConocelos {
+    /*border: 2px dashed red;*/                   /*Borde para identificarlo*/
     padding: 10px 20px;
-    background-color: #FFB80D;
-    color: white;
-    /*border: none;*/
-    border-radius: 5px;
-    cursor: pointer; 
+    background-color: #FFB80D;                  /*Color de fondo del boton*/
+    color: white;                               /*Color del texto del boton*/
+    border-radius: 5px;                           /*Borde redondeado*/
+    cursor: pointer;                              /*El cursor se vuelve una mano al posicionarse sobre el botón*/
+    margin: 15px;
+    font-size: .8em;
+    font-weight: bold;
+    border: 2px solid rgba(199, 16, 46, 0.5);
+    text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+#btnConocelos:hover{
+    background-color:#d39401;
+}
+/*APARTADO MAIN, CONTIENE BARRA DE FILTRO, BOTONES DE ORDENAR*/
 #mainContenidoPrincipal {
-    border: 2px solid blue; /*para chequear como se está moviendo*/
-    width: auto; /*para que vaya acorde al body*/
+    border: 2px solid blue;                     /*para chequear como se está moviendo*/
+    width: auto;                                  /*para que vaya acorde al body*/
     background-color: #E4F3FF;
 }
 
 /*BARRA DE FILTRO Y ORDENADO*/
 #barraDeFiltroYOrden {
-    height: 75px;
-    width: 100%; /*para que vaya acorde a main*/
-    background-color: #D1EBFF; /*color del fondo*/
+    height: 40px;                                 /*Altura de la barra*/
+    width: 100%;                                  /*para que vaya acorde a main*/
+    background-color: #D1EBFF;                  /*color del fondo*/
     box-shadow: 0px 6px 6.2px rgba(0, 0, 0, 0.25); /*sombra*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: flex;                                /*Display flexible*/
+    flex-direction: row;                          /*Direccion horizontal hacia la derecha*/
+    align-items: center;                          /*Alineación de los hijos en el eje vertical*/
+    justify-content: center;                      /*Alineación de los hijos en el eje horizontal los elementos se distribuyen uniformemente en la línea*/
 }
+/*ELEMENTOS DEL FILTRO Y ORDENAR*/
 #divFiltroyOrdenar {
+    /*border: 2px dashed red;*/
     padding: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 50px;
     width: 1118px;
     max-width: 1118px;
 }
+/*CONTENEDOR DEL FILTRO*/
 #divFiltro {
-    display: flex; /*contenedor flexible*/
-    flex-wrap: wrap; /*para que se acomode conforme se muevan los demás elementos*/
-    align-items: center; /*los elementos (texto e icono) se alineen al centro de manera vertical*/
+    display: flex;                                /*contenedor flexible*/
+    flex-wrap: wrap;                              /*para que se acomode conforme se muevan los demás elementos*/
+    align-items: center;                          /*los elementos (texto e icono) se alineen al centro de manera vertical*/
 }
-i {
-    color: #FFB80D; /*color del icono*/
-    font-size: 24px; /*tamaño de icono, funciona como una fuente, no como una imagen, por lo que no se le puede aplicar ancho y/o alto*/
-    padding-right: 10px;
-}
-#filter {
-    border: none; /*para que no tenga bordes*/
-    background-color: #D1EBFF; /*para que tenga el mismo color que la barra de filtro y orden*/
+#filtra{
+    background-color: #f7dc56;                  /*para que tenga el mismo color que la barra de filtro y orden*/
+    border: none;                                 /*para que no tenga bordes*/
+    padding: 0px;
     font-family: 'Poppins';
-    font-weight: bold; /*pone en negrita la letra*/
-    font-size: 16px; /*tamaño de la letra*/
+    font-weight: bold;                            /*pone en negrita la letra*/
+    font-size: 16px;                              /*tamaño de la letra*/
     color: #0180CB;
-    display: flex;
 }
+/*BOTON DE FILTRO*/
+#filter{
+    background-color: #D1EBFF;                  /*para que tenga el mismo color que la barra de filtro y orden*/
+    border: none;                                 /*para que no tenga bordes*/
+    padding: 0px;
+    font-family: 'Poppins';
+    font-weight: bold;                            /*pone en negrita la letra*/
+    font-size: 16px;                              /*tamaño de la letra*/
+    color: #0180CB;
+}
+/*ICONOS DE FILTRO Y ORDENAR*/
+i {
+    color: #FFB80D;                             /*color del icono*/
+    font-size: 22px;                              /*tamaño de icono, funciona como una fuente, no como una imagen, por lo que no se le puede aplicar ancho y/o alto*/
+    /*padding-right: 10px;*/
+    padding: 5px;                                 /*Separación del acolchado*/
+    border: 2px solid #FFB80D;                  /*Borde para que se distingan los botones*/
+    border-radius: 5px;                           /*El objetivo es poder poner en redondo los iconos de ordenar y en cuadraro el de filtro*/
+    cursor: pointer;                              /*El cursor se vuelve una mano al posicionarse sobre el botón*/
+}
+/*CONTENEDEOR DE ORDENAR*/
 #divOrdenar {
-    display: flex; /*contenedor flexible*/
-    flex-wrap: wrap; /*para que se acomode conforme se muevan los demás elementos*/
-    align-items: center; /*los elementos (texto e icono) se alineen al centro de manera vertical*/
-    border: none; /*para que no tenga bordes*/
+    display: flex;                                /*contenedor flexible*/
+    flex-wrap: wrap;                              /*para que se acomode conforme se muevan los demás elementos*/
+    align-items: center;                          /*los elementos (texto e icono) se alineen al centro de manera vertical*/
+    border: none;                                 /*para que no tenga bordes*/
+    gap: 12px;                                    /*Espacio entre los botones y el texto*/
 }
+/*BOTONONES DE ORDENAR*/
 #btnUp, #btnDown {
-    background-color: #D1EBFF; /*para que tenga el mismo color que la barra de filtro y orden*/
-    border: none; /*para que no tenga bordes*/
+    background-color: #D1EBFF;                  /*para que tenga el mismo color que la barra de filtro y orden*/
+    border: none;                                 /*para que no tenga bordes*/
     padding: 0px;
 }
+/*ETIQUETA DE ORDENAR*/
 #btnOrdenar {
     font-family: 'Poppins';
-    font-weight: bold; /*pone en negrita la letra*/
-    font-size: 16px; /*tamaño de la letra*/
+    font-weight: bold;                            /*pone en negrita la letra*/
+    font-size: 16px;                              /*tamaño de la letra*/
     color: #0180CB;
+}
+/*MENÚ DE FILTROS*/
+/*ETIQUETAS DE CADA FILTRO*/
+.label{
+    font-family: 'Poppins';
+    font-weight: bold;                            /*pone en negrita la letra*/
+    font-size: 16px;                              /*tamaño de la letra*/
+    color: #0180CB;
+    cursor:pointer;
+    font-size: 0.8em;
+}
+/*BOTON LIMPIAR FILTROS*/
+#btnClear{                 
+    padding: 10px 20px;
+    background-color: #FFB80D;                  /*Color de fondo del boton*/
+    color: white;                               /*Color del texto del boton*/
+    border-radius: 5px;                           /*Borde redondeado*/
+    cursor: pointer;                              /*El cursor se vuelve una mano al posicionarse sobre el botón*/
+    margin: 15px;
+    font-size: .8em;
+    font-weight: bold;
+    border: 2px solid rgba(199, 16, 46, 0.5);
+    text-decoration: none;
+}
+#btnClear:hover{
+    background-color:#d39401;
 }
 
 /*TARJETAS*/
@@ -132,8 +199,8 @@ i {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 1118px; 
-    max-width: 1118px;
+    width: 1400px; 
+    max-width: 1400px;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -144,6 +211,7 @@ i {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
+    /*flex-basis: 280px;*/
     gap: 10px;
     width: 343px;
     max-width: 343px;
@@ -206,5 +274,8 @@ i {
     max-height: 75%; 
 }
 
-li:nth-child(2) {
+@media(max-width: 700px){
+    header{
+        flex-direction:column-reverse;
+    }
 }

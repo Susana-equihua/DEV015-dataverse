@@ -40,7 +40,7 @@
             </p>
           </div>
         </div>
-        <button id="btnConocelos">¡Quiero conocerlos!</button>
+        <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
       </div>
       <div id="disney-castle">
         <img
@@ -72,41 +72,39 @@
         </div>
       </nav>
       <aside>
-        <p>FILTRA A TUS PERSONAJES</p>
+        <p id="filtra">FILTRA A LAS MASCOTAS:</p>
 
-        <label for="gender-select">Género:</label>
+        <label class="label" for="gender-select">Género:</label>
         <select name="genero" id="gender-select" data-testid="select-filter">
           <option value="opcion">Elige una opción</option>
           <option value="Hembra">Hembra</option>
           <option value="Macho">Macho</option>
         </select>
 
-        <label for="specie-select">Tipo de mascota:</label>
+        <label class="label" for="specie-select">Tipo de mascota:</label>
         <select
           name="speciesGroup"
           id="specie-select"
           data-testid="select-filter"
         >
           <option value="opcion">Elige una opción</option>
-          <option value="Perros">Perros</option>
-          <option value="Gatos">Gatos</option>
-          <option value="Pequeñas especies">Pequeñas especies</option>
-          <option value="Animales Salvajes">Animales salvajes</option>
-          <option value="Animales Acuáticos">Animales acuáticos</option>
-          <option value="Animales de Granja">Animales de granja</option>
-          <option value="Roedores">Roedores</option>
           <option value="Aves">Aves</option>
+          <option value="Animales Acuáticos">Acuáticos</option>
+          <option value="Domestico">Domesticos</option>
+          <option value="Pequeñas especies">Especies pequeñas</option>
+          <option value="Animales de Granja">Granja</option>
+          <option value="Animales Salvajes">Salvajes</option>                 
         </select>
 
-        <label for="film-select">Pertenece a una película de:</label>
+        <label class="label" for="film-select">Pertenece a una película de:</label>
         <select name="filmGenre" id="film-select" data-testid="select-filter">
           <option value="opcion">Elige una opción</option>
           <option value="Comedia">Comedia</option>
           <option value="Infantil">Infantil</option>
           <option value="Fantasía">Fantasía</option>
-          <option value=" Musical">Musical</option>
+          <option value="Musical">Musical</option>
           <option value="Drama">Drama</option>
-          <option value=" Romance">Romance</option>
+          <option value="Romance">Romance</option>
         </select>
         <button id="btnClear" data-testid="button-clear">
           Limpiar filtros
@@ -115,7 +113,9 @@
       <section id="root"></section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Code By Pamela Briceño - Susana Equihua</p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>

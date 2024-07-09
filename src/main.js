@@ -2,8 +2,7 @@ import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
-//console.log(filterData, renderItems(data), data);
- 
+
 //Ubicar en dónde se va a posicionar el renderItems en la página: <section id="root">
 const elementSection = document.querySelector('section[id="root"]');    //Crear un elementoHTML(<section id="root">) y llamarlo con un selector del DOM
 elementSection.appendChild(renderItems(data));                          //Situar la lista no ordenada (ul) de view.js dentro de la etiqueta section con la constante renderItems(data)

@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <div id="header-elements">
+      <div class="container">
         <div id="text-header">
           <div id="titular">
             <h1>
@@ -52,69 +52,75 @@
       </div>
     </header>
     <main id="mainContenidoPrincipal">
-      <nav id="barraDeFiltroYOrden">
-        <div id="divFiltroyOrdenar">
-          <div id="divFiltro">
-            <button id="filter">
-              <i class="fas fa-bars filter-icon"></i>
-              Filtros de búsqueda
-            </button>
+     <div class="container">
+        <nav id="barraDeFiltroYOrden">
+          <div id="divFiltroyOrdenar">
+            <div id="divFiltro">
+              <button id="filter">
+                <i class="fas fa-bars filter-icon"></i>
+              </button>
+              <label for="filter" class="labelFiltro">Filtros de búsqueda</label>
+            </div>
+            <div id="divOrdenar">
+              <button id="btnUp">
+                <i class="fa-solid fa-arrow-up-a-z"></i>
+              </button>
+              <button id="btnDown">
+                <i class="fa-solid fa-arrow-down-z-a"></i>
+              </button>
+              <label id="btnOrdenar">Ordenar</label>
+            </div>
           </div>
-          <div id="divOrdenar">
-            <button id="btnUp">
-              <i class="fa-solid fa-arrow-up-a-z"></i>
-            </button>
-            <button id="btnDown">
-              <i class="fa-solid fa-arrow-down-z-a"></i>
-            </button>
-            <label id="btnOrdenar">Ordenar</label>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <aside>
-        <p id="filtra">FILTRA A LAS MASCOTAS:</p>
+        <div class="container">
+          <p id="filtra">FILTRA A LAS MASCOTAS:</p>
 
-        <label class="label" for="gender-select">Género:</label>
-        <select name="genero" id="gender-select" data-testid="select-filter">
-          <option value="opcion">Elige una opción</option>
-          <option value="Hembra">Hembra</option>
-          <option value="Macho">Macho</option>
-        </select>
+          <label class="label" for="gender-select">Género:</label>
+          <select name="genero" id="gender-select" data-testid="select-filter">
+            <option value="opcion">Elige una opción</option>
+            <option value="Hembra">Hembra</option>
+            <option value="Macho">Macho</option>
+          </select>
 
-        <label class="label" for="specie-select">Tipo de mascota:</label>
-        <select
-          name="speciesGroup"
-          id="specie-select"
-          data-testid="select-filter"
-        >
-          <option value="opcion">Elige una opción</option>
-          <option value="Aves">Aves</option>
-          <option value="Animales Acuáticos">Acuáticos</option>
-          <option value="Domestico">Domesticos</option>
-          <option value="Pequeñas especies">Especies pequeñas</option>
-          <option value="Animales de Granja">Granja</option>
-          <option value="Animales Salvajes">Salvajes</option>                 
-        </select>
+          <label class="label" for="specie-select">Tipo de mascota:</label>
+          <select
+            name="speciesGroup"
+            id="specie-select"
+            data-testid="select-filter"
+          >
+            <option value="opcion">Elige una opción</option>
+            <option value="Aves">Aves</option>
+            <option value="Animales Acuáticos">Acuáticos</option>
+            <option value="Domestico">Domesticos</option>
+            <option value="Pequeñas especies">Especies pequeñas</option>
+            <option value="Animales de Granja">Granja</option>
+            <option value="Animales Salvajes">Salvajes</option>                 
+          </select>
 
-        <label class="label" for="film-select">Pertenece a una película de:</label>
-        <select name="filmGenre" id="film-select" data-testid="select-filter">
-          <option value="opcion">Elige una opción</option>
-          <option value="Comedia">Comedia</option>
-          <option value="Infantil">Infantil</option>
-          <option value="Fantasía">Fantasía</option>
-          <option value="Musical">Musical</option>
-          <option value="Drama">Drama</option>
-          <option value="Romance">Romance</option>
-        </select>
-        <button id="btnClear" data-testid="button-clear">
-          Limpiar filtros
-        </button>
+          <label class="label" for="film-select">Pertenece a una película de:</label>
+          <select name="filmGenre" id="film-select" data-testid="select-filter">
+            <option value="opcion">Elige una opción</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Infantil">Infantil</option>
+            <option value="Fantasía">Fantasía</option>
+            <option value="Musical">Musical</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+          </select>
+          <button id="btnClear" data-testid="button-clear">
+            Limpiar filtros
+          </button>
+      </div>
       </aside>
       <section id="root"></section>
     </main>
 
     <footer>
+      <div class="container">
       <p>Code By Pamela Briceño - Susana Equihua</p>
+    </div>
     </footer>
     <script src="main.js" type="module"></script>
   </body>

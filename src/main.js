@@ -36,10 +36,10 @@ filterFilmGenre.addEventListener('change',function(event){
 
 
 //Manejo del DOM para ordenar por orden alfabético
-const sortDataAsc = document.querySelector('button[id=btnDown]');                  //Llamar al botón de orden ascendente
+const sortDataAsc = document.querySelector('button[id=btnDown]');      //Llamar al botón de orden ascendente
 sortDataAsc.addEventListener('click', function(){                      //Escuchar el evento click sobre el boton de ordenar ascendente
   elementSection.innerHTML = '';                                       //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
-  const ordenAsc = sortData([...filteredData], 'name', 'ascendente');       //Constante para guardar la funcion de sortData con se le pasa como parametro filteredData
+  const ordenAsc = sortData([...filteredData], 'name', 'ascendente');  //Constante para guardar la funcion de sortData con se le pasa como parametro filteredData
   elementSection.appendChild(renderItems(ordenAsc));                   //Llamar a renderItems y pasarle como parametro la const ordenAsc
 });
 
@@ -51,7 +51,7 @@ sortDataDesc.addEventListener('click', function(){
 });
 
 //Manejo de DOM para el botón de limpiar filtros
-const filterClear = document.querySelector('button[id=btnClear]');              //Llamar al button
+const filterClear = document.querySelector('button[id=btnClear]');    //Llamar al button
 filterClear.addEventListener('click', function(){                     //Escuchar el evento click
   elementSection.innerHTML = '';                                      // Vaciar el contenido de elementSection; vaciar el contenido del section que muestra la data
   elementSection.appendChild(renderItems(data));                      // Renderizar a la data original

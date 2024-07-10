@@ -2,25 +2,43 @@
 * {
     box-sizing: border-box;                    /*Es una propiedad que cuando se agrega margin, padding o border en los elementos no crezca más alla del tamaño que le demos*/                              
 }
+
+html{
+    scroll-behavior: smooth;                   /*Un scroll de la pagina mas suave*/
+}
+
+
 /*El CUERPO de la pagina*/
 body {                                          
     font-family: 'Poppins', 'Arial';            /*Fuente de la letra sobre la página*/
     margin: 0;                                /*Ancho del body de la página*/
 }
+/*CONTENEDORES*/
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
 /*ENCABEZADO */
-header{                                         
-    display: flex;                               /*Para que el display sea flexible*/
-    flex-direction: row;                         /*Direccion horizontal hacia la derecha*/
-    justify-content: flex-start;            /*Alineación de los hijos en el eje horizontal los elementos se distribuyen uniformemente en la línea*/
-    align-items: center;                         /*Alineación de los hijos en el eje vertical*/
+header{         /*ESTILO PARA PANTALLA DE ESCRITORIO*/                                    
+    /*display: flex;*/                               /*Para que el display sea flexible*/
+    /*flex-direction: row;*/                         /*Direccion horizontal hacia la derecha*/
+    /*justify-content: flex-start;*/            /*Alineación de los hijos en el eje horizontal los elementos se distribuyen uniformemente en la línea*/
+    /*align-items: center;*/                         /*Alineación de los hijos en el eje vertical*/
     border: 2px dashed red;                    /*Borde para identificarlo*/
-    min-height: 50vh;                               /*El elemento va a ocupar toda la altura visible del navegador*/
+    min-height: 90vh;                               /*El elemento va a ocupar toda la altura visible del navegador*/
     background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%); /*Fondo*/
     width: 100%;
+    /*background-image: url("");*/
+}
+header .container{                   /*ESTILO MOBILE FIRST*/                                     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
 }
 /*TITULO DE LA PÁGINA*/  
 h1{
-    font-size: 2em;
+    font-size: 1.9em;
     border: 2px dashed red;                    /*Borde para identificarlo*/
     display: flex;
     align-items: center;
@@ -34,6 +52,7 @@ h1{
 #imgCastilloDisney{
     display: flex;
     margin: 15px;
+    display: none;              /*Version mobile*/
 }
 .castle{
     width: 350px;                                /*Ancho de la imagen*/
@@ -41,15 +60,17 @@ h1{
 }
 /*SUBTITULO DE BIENVENIDA*/
 h2{
-    font-size: 1.70em;
+    font-size: 1.60em;
     border: 2px dashed red;
     margin: 15px;                    /*Borde para identificarlo*/
+    text-align: center;
 }
-/*Texto de bienvenida*/
+/*TEXTO DE BIENVENIDA*/
 #parrafoBienvenidos{
     border: 2px dashed rgb(63, 58, 58);                    /*Borde para identificarlo*/
     margin: 15px;
-    font-size: 1em;
+    font-size: 0.9em;
+    text-align: center;
 }
 /*BOTON PARA CONOCER A LAS MASCOTAS*/
 #btnConocelos {
@@ -68,9 +89,16 @@ h2{
 #btnConocelos:hover{
     background-color:#d39401;
 }
+
 /*APARTADO MAIN, CONTIENE BARRA DE FILTRO, BOTONES DE ORDENAR*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
 #mainContenidoPrincipal {
-    border: 2px solid blue;                     /*para chequear como se está moviendo*/
+    border: 2px solid rgb(255, 0, 217);                     /*para chequear como se está moviendo*/
     width: auto;                                  /*para que vaya acorde al body*/
     background-color: #E4F3FF;
 }
@@ -88,12 +116,12 @@ h2{
 }
 /*ELEMENTOS DEL FILTRO Y ORDENAR*/
 #divFiltroyOrdenar {
-    /*border: 2px dashed red;*/
+    border: 2px dashed red;
     padding: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 50px;
     width: 1118px;
     max-width: 1118px;
@@ -104,7 +132,8 @@ h2{
     flex-wrap: wrap;                              /*para que se acomode conforme se muevan los demás elementos*/
     align-items: center;                          /*los elementos (texto e icono) se alineen al centro de manera vertical*/
 }
-#filtra{
+/*ETIQUETA DEL ICONO FILTROS*/
+.labelFiltro{
     background-color: #f7dc56;                  /*para que tenga el mismo color que la barra de filtro y orden*/
     border: none;                                 /*para que no tenga bordes*/
     padding: 0px;
@@ -112,6 +141,7 @@ h2{
     font-weight: bold;                            /*pone en negrita la letra*/
     font-size: 16px;                              /*tamaño de la letra*/
     color: #0180CB;
+    display: none;
 }
 /*BOTON DE FILTRO*/
 #filter{
@@ -153,8 +183,26 @@ i {
     font-weight: bold;                            /*pone en negrita la letra*/
     font-size: 16px;                              /*tamaño de la letra*/
     color: #0180CB;
+    display: none;                         /*Version mobile*/
 }
+
 /*MENÚ DE FILTROS*/
+nav .container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+/*PARRAFO DE FILTRA A LAS MASCOTAS*/
+#filtra{
+    background-color: #f7dc56;                  /*para que tenga el mismo color que la barra de filtro y orden*/
+    border: none;                                 /*para que no tenga bordes*/
+    padding: 0px;
+    font-family: 'Poppins';
+    font-weight: bold;                            /*pone en negrita la letra*/
+    font-size: 16px;                              /*tamaño de la letra*/
+    color: #045a8c;
+}
 /*ETIQUETAS DE CADA FILTRO*/
 .label{
     font-family: 'Poppins';
@@ -182,25 +230,26 @@ i {
 }
 
 /*TARJETAS*/
-#root {
+/*#root {
     padding: 0px;
-    border: 1px solid;
+    border: 2px solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: auto;
-}
+}*/
 .flex-container {
     list-style: none;
     padding: 0px;
-    border: 1px solid red;
+    border: 2px dashed red;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1400px; 
-    max-width: 1400px;
+    /*width: 1400px; 
+    max-width: 1400px;*/
+    width: auto;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -227,7 +276,6 @@ i {
     max-width: 280px;
     height: 280px;
     max-height: 280px;
-
     border: 1px solid;
 }
 #textoDeTarjetas {
@@ -273,9 +321,19 @@ i {
     height: 75%;
     max-height: 75%; 
 }
-
-@media(max-width: 700px){
+footer .container{
+    width: 100%;
+    height: 30px;
+    background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%);
+}
+footer p{
+    font-size: 0.7em;
+    text-align: center;
+    padding: 6px;
+    margin:0px
+}
+/*@media(max-width: 700px){
     header{
         flex-direction:column-reverse;
     }
-}
+}*/

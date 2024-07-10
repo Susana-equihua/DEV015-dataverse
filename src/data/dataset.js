@@ -7,7 +7,7 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/pluto-image.png',
     facts: {
       species: 'Perro (Bloodhound)',
-      speciesGroup: 'Perros',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
       livesIn: 'Casa de Mickey Mouse',
       filmGenre: ['Comedia', 'Infantil']
@@ -27,7 +27,7 @@ export default [
       speciesGroup: 'Pequeñas especies',
       gender: 'Macho',
       livesIn: 'Torre de Rapunzel',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Pascal está basado en el camaleón mascota de una de las animadoras de Disney.'
@@ -44,7 +44,7 @@ export default [
       speciesGroup: 'Pequeñas especies',
       gender: 'Macho',
       livesIn: 'Agrabah',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Abu fue animado por el legendario animador de Disney Mark Henn.'
@@ -58,7 +58,7 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/figaro-image.png',
     facts: {
       species: 'Gato',
-      speciesGroup: 'Gatos',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
       livesIn: 'Taller de Geppetto',
       filmGenre: ['Fantasía']
@@ -78,27 +78,27 @@ export default [
       speciesGroup: 'Animales Salvajes',
       gender: 'Macho',
       livesIn: 'Arendelle',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Sven fue inspirado en parte por los perros de trineo que los animadores de Disney estudiaron.'
     }
   },
   {
-    id: 'pegasus',
-    name: 'Pegasus',
-    shortDescription: 'De "Hércules", es el caballo alado, compañero leal, valiente, rápido y siempre dispuesto a ayudar a Hércules.',
-    description: 'Pegasus es el majestuoso caballo alado de Hércules en la película "Hércules". De color blanco y con una melena azul celeste, vive en el Monte Olimpo, pero acompaña a Hércules en sus aventuras en la Tierra. Una escena particularmente divertida es cuando Pegasus se encuentra con Megara y compite por la atención de Hércules, mostrándose celoso y haciendo todo tipo de monerías para recuperar el afecto de su amigo. Es leal, valiente y siempre está dispuesto a ayudar a Hércules en su misión de convertirse en un héroe.',
-    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/pegasus-image.png',
+    id: 'marie',
+    name: 'Marie',
+    shortDescription: 'De "Los Aristogatos", Marie es una elegante gatita blanca con un lazo rosa, conocida por su dulzura y actitud refinada.',
+    description: 'Es la hija de la sofisticada gata, Duquesa, y es parte de una familia de gatos aristocráticos en París. Marie es conocida por su actitud dulce pero también un poco altiva, siempre queriendo mantener su dignidad y clase deseando ser siempre una dama perfecta. Marie disfruta cantando y es un poco presumida, lo que añade un toque divertido a su personalidad. Su dueño es Madame Adelaide Bonfamille, una anciana millonaria que los adora. Marie aporta momentos de ternura y diversión, especialmente con sus hermanos traviesos, Toulouse y Berlioz.',
+    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/marie-image.png',
     facts: {
-      species: 'Caballo alado',
-      speciesGroup: 'Animales Salvajes',
-      gender: 'Macho',
-      livesIn: 'Olimpo',
-      filmGenre: ['Fantasía', ' Musical']
+      species: 'Gato',
+      speciesGroup: 'Domestico',
+      gender: 'Hembra',
+      livesIn: 'La mansión de Madame Adelaide Bonfamille',
+      filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'Fue creado a partir de una nube por Zeus para ser el compañero perfecto de Hércules.'
+      curiousFact: 'Una de las frases más icónicas de Marie es: "Porque soy una dama, por eso". Su diseño está inspirado en la raza Angora Turco.'
     }
   },
   {
@@ -112,27 +112,27 @@ export default [
       speciesGroup: 'Animales Acuáticos',
       gender: 'Macho',
       livesIn: 'Océano Atlántico',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Flounder, a pesar de su nombre (traducido del inglés), no es un lenguado sino un pez tropical ficticio.'
     }
   },
   {
-    id: 'pua',
-    name: 'Pua',
-    shortDescription: 'De "Moana", es el cerdito encantador y fiel compañero de Moana, curioso y aventurero.',
-    description: 'Pua es el tierno cerdito de Moana en la película "Moana". Con su pelaje blanco y manchas negras, Pua es dulce y amigable. Vive en la isla de Motunui y es el fiel compañero de Moana en sus primeras aventuras. En una escena, Moana y Pua intentan navegar en una canoa por primera vez, y Pua termina cayendo al agua, solo para ser rescatado rápidamente por Moana, mostrando su espíritu aventurero, pero también su vulnerabilidad. Aunque no la acompaña en su travesía por el océano, siempre está presente en su corazón.',
-    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/pua-image.png',
+    id: 'duquesa',
+    name: 'Duquesa',
+    shortDescription: 'Duquesa es una elegante y refinada gata que lidera a su familia felina en "Los Aristogatos" con gracia y determinación.',
+    description: 'Es la madre de Marie, Toulouse y Berlioz, Duquesa es dedicada, protectora y siempre está lista para enseñarles buenos modales y valores. Con su pelaje blanco como la nieve, ojos azul zafiro y una elegancia innata, Duquesa personifica la nobleza y el refinamiento. Vive con Madame Adelaide Bonfamille, una rica anciana en París. Cuando el malvado mayordomo Edgar los secuestra para quedarse con la herencia, Duquesa debe encontrar el camino de regreso a casa. En su viaje, recibe la ayuda de Thomas OMalley, un gato callejero. Duquesa demuestra gran amor y protección hacia sus cachorros manteniendo su elegancia y dignidad.',
+    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/duquesa-image.png',
     facts: {
-      species: 'Cerdo',
-      speciesGroup: 'Animales de Granja',
-      gender: 'Macho',
-      livesIn: 'Isla de Motonui',
-      filmGenre: ['Fantasía', ' Musical']
+      species: 'Gato',
+      speciesGroup: 'Domestico',
+      gender: 'Hembra',
+      livesIn: 'La mansión de Madame Adelaide Bonfamille',
+      filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'Su nombre "Pua" significa "flor" en hawaiano, reflejando su dulzura y ternura.'
+      curiousFact: 'El nombre “Duquesa” refleja un enfoque aristocrático y refinado, subrayando a una gata de alta sociedad en la romántica y culturalmente rica ciudad de París.'
     }
   },
   {
@@ -146,7 +146,7 @@ export default [
       speciesGroup: 'Animales Salvajes',
       gender: 'Macho',
       livesIn: 'Palacio de Agrabah',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Rajah fue un regalo del Sultán a Jasmín, y es tan protector que incluso asusta a los pretendientes indeseados.'
@@ -160,10 +160,10 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/meeko-image.png',
     facts: {
       species: 'Mapache',
-      speciesGroup: 'Roedores',
+      speciesGroup: 'Animales Salvajes',
       gender: 'Macho',
       livesIn: 'Bosques de Virginia',
-      filmGenre: ['Drama', ' Musical']
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Meeko tiene una debilidad por las galletas y siempre busca la manera de conseguir más.'
@@ -180,7 +180,7 @@ export default [
       speciesGroup: 'Animales Salvajes',
       gender: 'Macho',
       livesIn: 'Bosque',
-      filmGenre: ['Drama', ' Infantil']
+      filmGenre: ['Drama', 'Infantil']
     },
     extraInfo: {
       curiousFact: 'Thumper no estaba en el libro original "Bambi, una vida en el bosque", fue creado para la película.'
@@ -194,10 +194,10 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/dante-image.png',
     facts: {
       species: 'Perro (Xoloitzcuintle)',
-      speciesGroup: 'Perros',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
       livesIn: 'Pueblo de Santa Cecilia',
-      filmGenre: ['Fantasía', ' Musical']
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Dante es un Xoloitzcuintle, una raza antigua de perro mexicana.'
@@ -213,8 +213,8 @@ export default [
       species: 'Cangrejo',
       speciesGroup: 'Animales Acuáticos',
       gender: 'Macho',
-      liveIn: 'Mar Caribe',
-      filmGenre: ['Fantasía', ' Musical']
+      livesIn: 'Mar Caribe',
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'La canción "Bajo el mar" interpretada por Sebastián ganó el Óscar a la Mejor Canción Original en 1989.',
@@ -230,8 +230,8 @@ export default [
       species: 'Caballo',
       speciesGroup: 'Animales de Granja',
       gender: 'Macho',
-      liveIn: 'Reino de Corona',
-      filmGenre: ['Comedia', ' Musical']
+      livesIn: 'Reino de Corona',
+      filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Maximus fue inspirado por los perros de policía en cuanto a su comportamiento y personalidad.'
@@ -247,7 +247,7 @@ export default [
       species: 'Búho',
       speciesGroup: 'Aves',
       gender: 'Macho',
-      liveIn: 'Desconocido',
+      livesIn: 'Desconocido',
       filmGenre: ['Fantasía']
     },
     extraInfo: {
@@ -264,8 +264,8 @@ export default [
       species: 'Grillo',
       speciesGroup: 'Pequeñas especies',
       gender: 'Macho',
-      liveIn: 'Aldea de Mulán',
-      filmGenre: ['Drama', ' Musical']
+      livesIn: 'Aldea de Mulán',
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Sus sonidos fueron creados por el legendario actor de voz Frank Welker, quien también ha dado vida a personajes como Scooby-Doo y el gato Garfield.'
@@ -281,8 +281,8 @@ export default [
       species: 'Gorila',
       speciesGroup: 'Animales Salvajes',
       gender: 'Hembra',
-      liveIn: 'Selva Africana',
-      filmGenre: ['Drama', ' Musical']
+      livesIn: 'Selva Africana',
+      filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Terk fue originalmente escrita como un personaje masculino, pero se cambió a femenino durante el desarrollo de la película.'
@@ -296,47 +296,47 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/pongo-image.png',
     facts: {
       species: 'Perro (Dálmata)',
-      speciesGroup: 'Perros',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
-      liveIn: 'Londres, Inglaterra',
-      filmGenre: ['Comedia', ' Familia']
+      livesIn: 'Londres, Inglaterra',
+      filmGenre: ['Comedia', 'Familia']
     },
     extraInfo: {
       curiousFact: 'Pongo y Perdita tienen en total 101 cachorros, incluyendo a los adoptados, haciendo honor al título de la película.'
     }
   },
   {
-    id: 'scuttle',
-    name: 'Scuttle',
-    shortDescription: 'De "La Sirenita", es la gaviota amigable y despistada, que siempre da consejos erróneos, pero bien intencionados a Ariel.',
-    description: 'Scuttle es la adorable gaviota que ayuda a Ariel en "La Sirenita". Con su plumaje blanco y gris, y su andar torpe pero decidido, es conocido por su conocimiento erróneo sobre los objetos humanos; y pese a que a menudo está equivocado en sus explicaciones sobre estos objetos, su intención siempre es buena. Scuttle tiene un papel crucial en el desenlace de la película cuando, al final, ayuda a Ariel y a sus amigos a frustrar los planes de la malvada Úrsula, mostrando que es un gran aliado para Ariel.',
-    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/scuttle-image.png',
+    id: 'nana',
+    name: 'Nana',
+    shortDescription: 'De la clásica película "Peter Pan", Nana es la amorosa y leal San Bernardo que cuida de los niños Darling.',
+    description: 'Nana aparece en "Peter Pan" como la dedicada y cariñosa niñera canina de la familia Darling. Se caracteriza por su apariencia imponente pero gentil, con su pelaje marrón y blanco, y un semblante que siempre refleja su naturaleza protectora y amorosa. Nana actúa más como una niñera que como una mascota y siempre está al pendiente de Wendy, John y Michael, asegurándose de que estén a salvo y felices. Su lealtad y dedicación son inigualables, aunque a menudo es incomprendida por los adultos. Nana representa la figura maternal y protectora, aportando un toque de ternura y seguridad en la película.',
+    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/nana-image.png',
     facts: {
-      species: 'Gaviota',
-      speciesGroup: 'Aves',
-      gender: 'Macho',
-      liveIn: 'Océano',
-      filmGenre: ['Fantasía', ' Musical']
+      species: 'Perro (San Bernardo)',
+      speciesGroup: 'Domestico',
+      gender: 'Hembra',
+      livesIn: 'Casa de la familia Darling',
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'Scuttle fue interpretado por el comediante Buddy Hackett, quien añadió mucho de su propio humor al personaje.'
+      curiousFact: 'Nana se basa en el perro de la familia del autor J.M. Barrie, creador de Peter Pan. A pesar de no tener diálogos, su expresión y acciones la hacen un personaje entrañable.'
     }
   },
   {
-    id: 'gusyjaq',
-    name: 'Gus y Jaq',
-    shortDescription: 'De "Cenicienta", son los ratones leales y amigos de Cenicienta, ingeniosos y siempre listos para ayudar.',
-    description: 'Gus y Jaq son los fieles y valientes ratones amigos de Cenicienta en la película homónima. Gus es el ratón regordete que porta su característica camiseta amarilla tiene un espíritu algo torpe pero valiente. Su apetito voraz y su tendencia a meterse en problemas lo hacen un personaje adorable y divertido. Jaq, por otro lado, es delgado, astuto y lleva una chaqueta roja, actúa como el líder del dúo, siempre ideando planes ingeniosos para ayudar a Cenicienta. Juntos, trabajan incansablemente para ayudar a Cenicienta a superar las dificultades que enfrenta con su madrastra y hermanastras para alcanzar su final feliz.',
-    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/gusjaq-image.png',
+    id: 'reina',
+    name: 'Reina',
+    shortDescription: 'De "La Dama y el Vagabundo", Reina es una dulce y muy elegante cocker spaniel que vive una aventura romántica.',
+    description: 'Reina, la encantadora protagonista de "La Dama y el Vagabundo," es un cocker spaniel que rebosa gracia y dulzura. Con su pelaje dorado y sedoso, grandes ojos expresivos y largas orejas onduladas, Lady es el epítome de la elegancia canina. Vive en un hogar amoroso con sus dueños, "Querido" y "Querida," y disfruta de una vida cómoda y mimada.  Su mundo cambia cuando conoce a Golfo, un perro callejero. Juntos, enfrentan diversas aventuras y descubren el amor verdadero, superando diferencias de clase. El carácter de Lady evoluciona pasando de ser una cachorrita mimada a una perra valiente y amorosa.',
+    imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/reina-image.png',
     facts: {
-      species: 'Ratones',
-      speciesGroup: 'Roedores',
-      gender: 'Macho',
-      liveIn: 'Casa de Cenicienta',
-      filmGenre: ['Fantasía', ' Romance', ' Musical']
+      species: 'Perro (Cocker spaniel)',
+      speciesGroup: 'Domestico',
+      gender: 'Hembra',
+      livesIn: 'Casa de Querida y Querido',
+      filmGenre: ['Fantasía', 'Romance', 'Familiar']
     },
     extraInfo: {
-      curiousFact: 'Gus es conocido por sus problemas para pronunciar palabras correctamente, mientras que Jaq suele liderar las misiones de rescate.'
+      curiousFact: 'La escena del espagueti es una de las más icónicas del cine animado y ha sido parodiada en numerosas ocasiones.'
     }
   },
   {
@@ -347,9 +347,9 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/rufus-image.png',
     facts: {
       species: 'Gato',
-      speciesGroup: 'Gatos',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
-      liveIn: 'Orfanato de Penny',
+      livesIn: 'Orfanato de Penny',
       filmGenre: ['Drama']
     },
     extraInfo: {
@@ -364,9 +364,9 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/bolt-image.png',
     facts: {
       species: 'Perro (Pastor Alemán)',
-      speciesGroup: 'Perros',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
-      liveIn: 'Set de TV de Hollywood',
+      livesIn: 'Set de TV de Hollywood',
       filmGenre: ['Comedia']
     },
     extraInfo: {
@@ -383,8 +383,8 @@ export default [
       species: 'Gallo',
       speciesGroup: 'Aves',
       gender: 'Macho',
-      liveIn: 'Isla de Motunui',
-      filmGenre: ['Fantasía', ' Musical']
+      livesIn: 'Isla de Motunui',
+      filmGenre: ['Fantasía', 'Musical']
     },
     extraInfo: {
       curiousFact: 'HeiHei fue originalmente concebido como un personaje inteligente y astuto, pero se cambió para ser cómico y despistado.'
@@ -398,10 +398,10 @@ export default [
     imageUrl: 'https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/bruno-image.png',
     facts: {
       species: 'Perro (Bloodhound)',
-      speciesGroup: 'Perros',
+      speciesGroup: 'Domestico',
       gender: 'Macho',
-      liveIn: 'Casa de Cenicienta',
-      filmGenre: ["Fantasía", " Romance", " Musical"]
+      livesIn: 'Casa de Cenicienta',
+      filmGenre: ['Fantasía', 'Romance', 'Musical']
     },
     extraInfo: {
       curiousFact: 'Bruno se transforma en un caballo que ayuda a Cenicienta a ir al baile.'

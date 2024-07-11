@@ -47,3 +47,7 @@ export const sortData = (data, sortBy, sortOrder) => {
     return data                              //retornar la data ordenada
   }
 };
+
+export const computeStats = (data) =>{
+  console.log(data);
+}; 

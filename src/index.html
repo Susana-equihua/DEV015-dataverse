@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,19 +19,19 @@
   <body>
     <header>
       <div class="container">
-        <div id="text-header">
-          <div id="titular">
+        <div clas="text-header">
+          <!--<div id="titular">-->
             <h1>
-              <img
+             <img
                 id="imgLogoDisney"
                 src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/logo%20disney.png"
                 alt="DISNEY"
-              />
+             />
               MASCOTAS
             </h1>
             <h2>¡BIENVENIDOS!</h2>
-          </div>
-          <div id="presentation-text">
+          <!--</div>-->
+          <!--<div id="presentation-text">-->
             <p id="parrafoBienvenidos">
               Descubre el mágico mundo de las mascotas de Disney. Conoce las
               historias, aventuras y datos curiosos de los adorables compañeros
@@ -38,17 +39,17 @@
               hasta el travieso Abu, ¡explora todo lo que hace especiales a
               estos encantadores animales!
             </p>
-          </div>
+            <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
+          <!--</div>-->
         </div>
-        <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
-      </div>
-      <div id="disney-castle">
-        <img
+        <div class="disney-castle">
+          <img
           id="imgCastilloDisney"
           class="castle"
           src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png"
           alt="Aquí había un castillo de Disney"
-        />
+          />
+      </div>
       </div>
     </header>
     <main id="mainContenidoPrincipal">
@@ -71,6 +72,7 @@
               <label id="btnOrdenar">Ordenar</label>
             </div>
           </div>
+          <button id="stats">¿Sabías qué...?</button>
         </nav>
       </div>
       <aside>
@@ -112,6 +114,7 @@
           <button id="btnClear" data-testid="button-clear">
             Limpiar filtros
           </button>
+          
       </div>
       </aside>
       <section id="root"></section>

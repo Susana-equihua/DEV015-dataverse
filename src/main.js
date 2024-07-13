@@ -1,4 +1,4 @@
-import { filterData, sortData } from './dataFunctions.js';
+import { filterData, sortData, computeStats} from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
@@ -36,7 +36,7 @@ filterFilmGenre.addEventListener('change',function(event){
 
 
 //Manejo del DOM para ordenar por orden alfabético
-const sortDataAsc = document.querySelector('button[id=btnDown]');      //Llamar al botón de orden ascendente
+const sortDataAsc = document.querySelector('button[id=btnUp]');        //Llamar al botón de orden ascendente
 sortDataAsc.addEventListener('click', function(){                      //Escuchar el evento click sobre el boton de ordenar ascendente
   elementSection.innerHTML = '';                                       //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
   const ordenAsc = sortData([...filteredData], 'name', 'ascendente');  //Constante para guardar la funcion de sortData con se le pasa como parametro filteredData
@@ -58,4 +58,22 @@ filterClear.addEventListener('click', function(){                     //Escuchar
   filterSpecies.value = '';                                           // Restablecer los valores de los selectores de cada filtro ('' una cadena vacía)
   filterGender.value = '';
   filterFilmGenre.value = '';
+});
+
+/*const estadistica = document.querySelector('button[id=btn-stats]');
+estadistica.addEventListener('click', function(){
+  const hembrasTotal = computeStats(data);
+  console.log(hembrasTotal);
+ //const resultadoHembras = computeStats(data, 'gender', 'Hembra');
+ //console.log(resultadoHembras)
+  //return data
+});*/
+
+//Manejo de DOM para botón de estadistica
+const estadistica = document.querySelector('button[id=btn-stats]');
+estadistica.addEventListener('click', function(){
+  const calculoDos = computeStats(data, 'gender', 'Hembra');
+  console.log(calculoDos);
+
+  //return data
 });

@@ -20,65 +20,57 @@
     <header>
       <div class="container">
         <div clas="text-header">
-          <!--<div id="titular">-->
-            <h1>
-             <img
-                id="imgLogoDisney"
-                src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/logo%20disney.png"
-                alt="DISNEY"
-             />
-              MASCOTAS
-            </h1>
-            <h2>¡BIENVENIDOS!</h2>
-          <!--</div>-->
-          <!--<div id="presentation-text">-->
-            <p id="parrafoBienvenidos">
-              Descubre el mágico mundo de las mascotas de Disney. Conoce las
-              historias, aventuras y datos curiosos de los adorables compañeros
-              de tus personajes favoritos de Disney. Desde el valiente Maximus
-              hasta el travieso Abu, ¡explora todo lo que hace especiales a
-              estos encantadores animales!
-            </p>
-            <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
-          <!--</div>-->
+          <h1>  
+            <img 
+              id="imgLogoDisney"
+              src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/logo%20disney.png"
+              alt="DISNEY"
+            />  
+            MASCOTAS
+          </h1>  
+          <h2>¡BIENVENIDOS!</h2>        
+          <p id="parrafoBienvenidos">
+            Descubre el mágico mundo de las mascotas de Disney. Conoce las
+            historias, aventuras y datos curiosos de los adorables compañeros
+            de tus personajes favoritos de Disney. Desde el valiente Maximus
+            hasta el travieso Abu, ¡explora todo lo que hace especiales a
+            estos encantadores animales!
+          </p>
         </div>
-        <div class="disney-castle">
-          <img
-          id="imgCastilloDisney"
-          class="castle"
+        <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
+        <!--<div class="disney-castle">
+          <img id="castle"
           src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png"
           alt="Aquí había un castillo de Disney"
           />
-      </div>
+        </div>-->
       </div>
     </header>
-    <main id="mainContenidoPrincipal">
+    <main>
      <div class="container">
-        <nav id="barraDeFiltroYOrden">
-          <div id="divFiltroyOrdenar">
-            <div id="divFiltro">
+        <nav>
+          <div id="div-filtro-ordenar">
+            <div id="div-filtro">
               <button id="filter">
                 <i class="fas fa-bars filter-icon"></i>
               </button>
-              <label for="filter" class="labelFiltro">Filtros de búsqueda</label>
+              <label for="filter" class="label-filtro">Filtros de búsqueda</label>
             </div>
-            <div id="divOrdenar">
+            <button id="btn-stats">¿Sabías qué...?</button>
+            <div id="div-ordenar">
               <button id="btnUp">
                 <i class="fa-solid fa-arrow-up-a-z"></i>
               </button>
               <button id="btnDown">
                 <i class="fa-solid fa-arrow-down-z-a"></i>
               </button>
-              <label id="btnOrdenar">Ordenar</label>
+              <label id="label-ordenar">Ordenar</label>
             </div>
           </div>
-          <button id="stats">¿Sabías qué...?</button>
         </nav>
-      </div>
-      <aside>
-        <div class="container">
-          <p id="filtra">FILTRA A LAS MASCOTAS:</p>
-
+       <aside>
+         <div class="container">
+          <!--<p id="filtra">FILTRA A LAS MASCOTAS:</p>-->
           <label class="label" for="gender-select">Género:</label>
           <select name="genero" id="gender-select" data-testid="select-filter">
             <option value="opcion">Elige una opción</option>
@@ -116,8 +108,9 @@
           </button>
           
       </div>
-      </aside>
-      <section id="root"></section>
+       </aside>
+       <section id="root"></section>
+     </div>
     </main>
 
     <footer>

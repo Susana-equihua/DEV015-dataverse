@@ -60,9 +60,20 @@ filterClear.addEventListener('click', function(){                     //Escuchar
   filterFilmGenre.value = '';
 });
 
-//Manejo de DOM para botón de estadistica
-const estadistica = document.querySelector('button[id=stats]');
+/*const estadistica = document.querySelector('button[id=btn-stats]');
 estadistica.addEventListener('click', function(){
-  const calculo = computeStats(data);
-  return data
+  const hembrasTotal = computeStats(data);
+  console.log(hembrasTotal);
+ //const resultadoHembras = computeStats(data, 'gender', 'Hembra');
+ //console.log(resultadoHembras)
+  //return data
+});*/
+
+//Manejo de DOM para botón de estadistica
+const estadistica = document.querySelector('button[id=btn-stats]');
+estadistica.addEventListener('click', function(){
+  const calculoDos = computeStats(data, 'gender', 'Hembra');
+  console.log(calculoDos);
+
+  //return data
 });

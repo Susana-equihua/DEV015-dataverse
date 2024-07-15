@@ -105,7 +105,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 };*/
 
-export const computeStats = (data, property, value) => {
+/*export const computeStats = (data, property, value) => {
   //Creamos
   if (property === "gender") {
     const calculo = data.reduce((accumulator, currentObject) => {

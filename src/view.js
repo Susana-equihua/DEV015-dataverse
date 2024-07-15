@@ -5,6 +5,7 @@ export const renderItems = (data) => {
   data.forEach(function(data){   //Metodo forEach o map, para recorrer el arreglo de objetos
     console.log(data) //imprimir en la consola; aparece un listado detallado por objeto
     const elementLi = document.createElement("li"); //Crear un <li> por cada objeto de la data
+    //elementLi.setAttribute("class", "item-flex");
     elementLi.setAttribute("itemtype", "item-flex");
     elementLi.setAttribute("itemscope", "item-segundo");
     //elementLi.setAttribute("data-id", objeto.id);
@@ -19,9 +20,8 @@ export const renderItems = (data) => {
       <div id="text">
         <dl id="textoDeTarjetas" itemscop itemtype = "mascotasDisney">
           <dt id="spanName">Conoce a <span itemprop="name">${data.name}</span>:</dt>
-          <dd itemprop="shortDescription">${data.shortDescription}</dd>
+          <dd id="shortDesc" itemprop="shortDescription">${data.shortDescription}</dd>
           <dd><span class="spanFacts">Especie: </span><span itemprop="species">${data.facts.species}</span></dd>
-          <dd><span class="spanFacts">Género: </span><span itemprop="gender">${data.facts.gender}</span></dd>
           <dd><span class="spanFacts">Vive en: </span><span itemprop="livesIn">${data.facts.livesIn}</span></dd>
           <dd><span class="spanFacts">Género de la película: </span><span itemprop="filmGenre">${data.facts.filmGenre}</span></dd><br>
           <dd><span class="fun-fact">Dato curioso:</span><span itemprop="curiousFact"> ${data.extraInfo.curiousFact}</span><dd>
@@ -34,6 +34,8 @@ export const renderItems = (data) => {
     `
   }); 
   return elementUl   //Retornar el elemento <ul>
+
+  //<dd><span class="spanFacts">Género: </span><span itemprop="gender">${data.facts.gender}</span></dd>
 
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   //return 'example';

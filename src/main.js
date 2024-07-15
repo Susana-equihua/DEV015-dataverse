@@ -1,4 +1,4 @@
-import { filterData, sortData, computeStats} from './dataFunctions.js';
+import { filterData, sortData} from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
@@ -70,10 +70,10 @@ estadistica.addEventListener('click', function(){
 });*/
 
 //Manejo de DOM para botón de estadistica
-const estadistica = document.querySelector('button[id=btn-stats]');
+/*const estadistica = document.querySelector('button[id=btn-stats]');
 estadistica.addEventListener('click', function(){
   const calculoDos = computeStats(data, 'gender', 'Hembra');
   console.log(calculoDos);
 
   //return data
-});
+});*/

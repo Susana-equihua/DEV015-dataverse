@@ -38,25 +38,18 @@
           </p>
         </div>
         <a href="#mainContenidoPrincipal" id="btnConocelos">¡Quiero conocerlos!</a>
-        <!--<div class="disney-castle">
-          <img id="castle"
-          src="https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/castillo%20de%20disney%20-%20header.png"
-          alt="Aquí había un castillo de Disney"
-          />
-        </div>-->
       </div>
     </header>
-    <main>
+    <main id="mainContenidoPrincipal">
      <div class="container">
         <nav>
-          <div id="div-filtro-ordenar">
+          <div id="barra-filtro-ordenar">
             <div id="div-filtro">
-              <button id="filter">
+              <button id="btn-filter">
                 <i class="fas fa-bars filter-icon"></i>
               </button>
               <label for="filter" class="label-filtro">Filtros de búsqueda</label>
             </div>
-            <button id="btn-stats">¿Sabías qué...?</button>
             <div id="div-ordenar">
               <button id="btnUp">
                 <i class="fa-solid fa-arrow-up-a-z"></i>
@@ -66,48 +59,48 @@
               </button>
               <label id="label-ordenar">Ordenar</label>
             </div>
+          <button id="btn-stats">¿Sabías qué...?</button>
           </div>
         </nav>
        <aside>
          <div class="container">
-          <!--<p id="filtra">FILTRA A LAS MASCOTAS:</p>-->
-          <label class="label" for="gender-select">Género:</label>
-          <select name="genero" id="gender-select" data-testid="select-filter">
-            <option value="opcion">Elige una opción</option>
-            <option value="Hembra">Hembra</option>
-            <option value="Macho">Macho</option>
-          </select>
-
-          <label class="label" for="specie-select">Tipo de mascota:</label>
-          <select
-            name="speciesGroup"
-            id="specie-select"
-            data-testid="select-filter"
-          >
-            <option value="opcion">Elige una opción</option>
-            <option value="Aves">Aves</option>
-            <option value="Animales Acuáticos">Acuáticos</option>
-            <option value="Domestico">Domesticos</option>
-            <option value="Pequeñas especies">Especies pequeñas</option>
-            <option value="Animales de Granja">Granja</option>
-            <option value="Animales Salvajes">Salvajes</option>                 
-          </select>
-
-          <label class="label" for="film-select">Pertenece a una película de:</label>
-          <select name="filmGenre" id="film-select" data-testid="select-filter">
-            <option value="opcion">Elige una opción</option>
-            <option value="Comedia">Comedia</option>
-            <option value="Infantil">Infantil</option>
-            <option value="Fantasía">Fantasía</option>
-            <option value="Musical">Musical</option>
-            <option value="Drama">Drama</option>
-            <option value="Romance">Romance</option>
-          </select>
-          <button id="btnClear" data-testid="button-clear">
+           <!--<p id="filtra">FILTRA A LAS MASCOTAS:</p>-->
+           <div class="div-select">
+             <label class="label" for="gender-select">Género:</label>
+             <select name="genero" id="gender-select" data-testid="select-filter">
+             <option value="" disable selected hidden>Elige una opción</option>
+             <option value="Hembra">Hembra</option>
+             <option value="Macho">Macho</option>
+             </select>
+           </div>
+           <div class="div-select">
+             <label class="label" for="specie-select">Tipo de mascota:</label>
+             <select name="speciesGroup" id="specie-select" data-testid="select-filter">
+             <option value="" disable selected hidden>Elige una opción</option>
+             <option value="Aves">Aves</option>
+             <option value="Animales Acuáticos">Acuáticos</option>
+             <option value="Domestico">Domesticos</option>
+             <option value="Pequeñas especies">Especies pequeñas</option>
+             <option value="Animales de Granja">Granja</option>
+             <option value="Animales Salvajes">Salvajes</option>                 
+             </select>
+           </div>
+           <div class="div-select">
+             <label class="label" for="film-select">Es de una película de:</label>
+             <select name="filmGenre" id="film-select" data-testid="select-filter">
+             <option value="" disable selected hidden>Elige una opción</option>
+             <option value="Comedia">Comedia</option>
+             <option value="Infantil">Infantil</option>
+             <option value="Fantasía">Fantasía</option>
+             <option value="Musical">Musical</option>
+             <option value="Drama">Drama</option>
+             <option value="Romance">Romance</option>
+             </select>
+           </div>
+           <button id="btnClear" data-testid="button-clear">
             Limpiar filtros
-          </button>
-          
-      </div>
+           </button>          
+         </div>
        </aside>
        <section id="root"></section>
      </div>

@@ -175,7 +175,7 @@ export const computeStats = (data, property, statsBy) => {
     }, 0);
     const calculoFantasia = (fantasia / data.length) * 100;
     return Math.round(calculoFantasia);
-  }
+  } 
 
   if (statsBy === "porcentajeMusical") {
     const musical = data.reduce((contador, obj) => {
@@ -213,80 +213,3 @@ export const computeStats = (data, property, statsBy) => {
     return Math.round(calculoRomance);
   }
 };
-
-//1. Escoger la propiedad que usaremos para hacer el primer cálculo (genero hembra)
-//const totalHembras =
-//PRUEBAS
-/*export const computeStats = (data, gender, value) => {
-  const computeStats = (data, property, value) => {
-    if (property === "gender") {
-      const calculo = data.reduce((accumulator, currentObject) => {
-        if (currentObject[property] === value) {
-          accumulator += 1;
-        }
-        return accumulator;
-      }, 1);
-    
-      //console.log((calculo / data.length) * 100);
-      return data.length > 0 ? (calculo / data.length) * 100 : 0;
-      
-    }
-  };
-};*/
-
-/*export const computeStats = (data, property, value) => {  //Creamos 
-  if (property === "gender") {
-    const calculo = data.reduce((accumulator, currentObject) => {
-      if (currentObject[property] === value) {
-        accumulator += 1;
-      }
-      return accumulator;
-    }; 0);
-  
-    return (calculo / data.length) * 100;
-  }
-};*/
-
-/* export const computeStats = (data, property, value) => {
-  //Creamos
-  if (property === "gender") {
-    const calculo = data.reduce((accumulator, currentObject) => {
-      // El metodo reduce es un acumulador, es decir, se encarga de reducir todo un Array a un único valor
-      if (currentObject[property] === value) {
-        accumulator += 1;
-      }
-      console.log(accumulator);
-      return accumulator;
-    }, 0);
-    return calculo;
-  }
-};
-
-export const computeStats = (data) => {};
- */
-//const hembras = data.gender.Hembra.length
-/*const ciudades = [
-  { id: 1, nombre: "New york", temperatura: 25 },
-  { id: 2, nombre: "Los Ángeles", temperatura: 30 },
-  { id: 3, nombre: "Chicago", temperatura: 15 },
-  { id: 4, nombre: "Queens", temperatura: 27 }
-];
-
-const sumaDeLasTemperaturas = ciudades.reduce((acumulador, ciudad, indice) => {
-  console.log(`La temperatura de la ciudad de ${ciudad.nombre} es de ${ciudad.temperatura} grados`);
-
-  const temperaturaCiudad = ciudad.temperatura;
-  return acumulador + temperaturaCiudad;
-}, 0);
-
-const temperaturaPromedio = sumaDeLasTemperaturas / ciudades.length;
-
-console.log(`La temperatura promedio de los Estados Unidos es de ${temperaturaPromedio} grados`);
-
-
-
-  //2. Sacar el porcentaje de las que son hembras (Cantidad de hembras/Total de animales x 100)
-  //2.1. Conseguir la cantidad total de hembras
-  //2.2. Cantidad total de animales 
-  console.log(data);
-};*/

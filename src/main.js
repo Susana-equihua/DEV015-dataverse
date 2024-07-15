@@ -83,15 +83,11 @@ estadistica.addEventListener("click", function () {
     aves: computeStats(data, "speciesGroup", "porcentajeAves"),
     acuaticos: computeStats(data, "speciesGroup", "porcentajeAcuaticos"),
     domesticos: computeStats(data, "speciesGroup", "porcentajeDomesticos"),
-    especiesPequeñas: computeStats(
-      data,
-      "speciesGroup",
-      "porcentajeEspeciesPequeñas"
-    ),
+    especiesPequeñas: computeStats(data, "speciesGroup", "porcentajeEspeciesPequeñas"),
     granja: computeStats(data, "speciesGroup", "porcentajeGranja"),
     salvajes: computeStats(data, "speciesGroup", "porcentajeSalvajes"),
   };
-  //console.log(porcentajes)
+  console.log(porcentajesEspecies)
 
   let grupoMayorEspecies = "";
   let porcentajeMayorEspecies = 0;
@@ -130,21 +126,4 @@ estadistica.addEventListener("click", function () {
   console.log(
     `El genero de pelicula con mas porcentaje es ${grupoMayorPeliculas} con ${porcentajeMayorPeliculas}%`
   );
-  /*   const avesCalculo = computeStats(data, 'speciesGroup', 'porcentajeAves');
-  console.log(avesCalculo)
-
-  const acuaticoCalculo = computeStats(data, 'speciesGroup', 'porcentajeAcuaticos');
-  console.log(acuaticoCalculo)
-
-  const domesticoCalculo = computeStats(data, 'speciesGroup', 'porcentajeDomesticos');
-  console.log(domesticoCalculo)
-
-  const especiesPequeñasCalculo = computeStats(data, 'speciesGroup', 'porcentajeEspeciesPequeñas');
-  console.log(especiesPequeñasCalculo)
-
-  const granjaCalculo = computeStats(data, 'speciesGroup', 'porcentajeGranja');
-  console.log(granjaCalculo)
-
-  const salvajeCalculo = computeStats(data, 'speciesGroup', 'porcentajeSalvajes');
-  console.log(salvajeCalculo) */
 });

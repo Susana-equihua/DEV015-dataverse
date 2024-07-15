@@ -50,27 +50,169 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 };
 
+export const computeStats = (data, property, statsBy) => {
+  //*PORCENTAJE DE HEMBRAS
 
+  if (statsBy === "porcentajeHembras") {
+    const hembras = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Hembra") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoHembras = (hembras / data.length) * 100;
+    return Math.round(calculoHembras);
+  }
 
-/*export const computeStats = (data) =>{
-  
-  const hembras = data.filter((element) => element.facts.gender === 'Hembra');
-  const cantidadHembras = hembras.length;
-  
-  /*data.reduce((acumulador, elementoActual) => {*/
+  //*PORCENTAJE DE ESPECIES
 
-/*const calculo = (cantidadHembras / data.length) * 100;
-    return calculo
-    //console.log(cantidadHembras);
-    //return cantidadHembras
+  if (statsBy === "porcentajeAves") {
+    const aves = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Aves") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoAves = (aves / data.length) * 100;
+    return Math.round(calculoAves);
+  }
 
-  //}, 1);
-  
-  /*data.reduce((accumulator, currentObject) => {
+  if (statsBy === "porcentajeAcuaticos") {
+    const acuaticos = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Animales Acuáticos") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoAcuaticos = (acuaticos / data.length) * 100;
+    return Math.round(calculoAcuaticos);
+  }
 
-    
-  });*/
-//};
+  if (statsBy === "porcentajeDomesticos") {
+    const domesticos = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Domestico") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoDomesticos = (domesticos / data.length) * 100;
+    return Math.round(calculoDomesticos);
+  }
+
+  if (statsBy === "porcentajeEspeciesPequeñas") {
+    const especiesPequeñas = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Pequeñas especies") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoEspeciesPequeñas = (especiesPequeñas / data.length) * 100;
+    return Math.round(calculoEspeciesPequeñas);
+  }
+
+  if (statsBy === "porcentajeGranja") {
+    const granja = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Animales de Granja") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoGranja = (granja / data.length) * 100;
+    return Math.round(calculoGranja);
+  }
+
+  if (statsBy === "porcentajeSalvajes") {
+    const salvajes = data.reduce((contador, obj) => {
+      //console.log(obj.facts[property]);
+      if (obj.facts[property] === "Animales Salvajes") {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoSalvajes = (salvajes / data.length) * 100;
+    return Math.round(calculoSalvajes);
+  }
+
+  //*PORCENTAJE DE GENEROS DE PELICULAS
+
+  if (statsBy === "porcentajeComedia") {
+    const comedia = data.reduce((contador, obj) => {
+      const comediaPropiedad = obj.facts[property];
+      if (comediaPropiedad.includes("Comedia")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoComedia = (comedia / data.length) * 100;
+    return Math.round(calculoComedia);
+  }
+
+  if (statsBy === "porcentajeInfantil") {
+    const infantil = data.reduce((contador, obj) => {
+      const infantilPropiedad = obj.facts[property];
+      if (infantilPropiedad.includes("Infantil")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoInfantil = (infantil / data.length) * 100;
+    return Math.round(calculoInfantil);
+  }
+
+  if (statsBy === "porcentajeFantasia") {
+    const fantasia = data.reduce((contador, obj) => {
+      const fantasiaPropiedad = obj.facts[property];
+      if (fantasiaPropiedad.includes("Infantil")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoFantasia = (fantasia / data.length) * 100;
+    return Math.round(calculoFantasia);
+  }
+
+  if (statsBy === "porcentajeMusical") {
+    const musical = data.reduce((contador, obj) => {
+      const musicalPropiedad = obj.facts[property];
+      if (musicalPropiedad.includes("Infantil")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoMusical = (musical / data.length) * 100;
+    return Math.round(calculoMusical);
+  }
+
+  if (statsBy === "porcentajeDrama") {
+    const drama = data.reduce((contador, obj) => {
+      const dramaPropiedad = obj.facts[property];
+      if (dramaPropiedad.includes("Infantil")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoDrama = (drama / data.length) * 100;
+    return Math.round(calculoDrama);
+  }
+
+  if (statsBy === "porcentajeRomance") {
+    const romance = data.reduce((contador, obj) => {
+      const romancePropiedad = obj.facts[property];
+      if (romancePropiedad.includes("Infantil")) {
+        contador += 1;
+      }
+      return contador;
+    }, 0);
+    const calculoRomance = (romance / data.length) * 100;
+    return Math.round(calculoRomance);
+  }
+};
 
 //1. Escoger la propiedad que usaremos para hacer el primer cálculo (genero hembra)
 //const totalHembras =
@@ -105,7 +247,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 };*/
 
-export const computeStats = (data, property, value) => {
+/* export const computeStats = (data, property, value) => {
   //Creamos
   if (property === "gender") {
     const calculo = data.reduce((accumulator, currentObject) => {
@@ -120,10 +262,8 @@ export const computeStats = (data, property, value) => {
   }
 };
 
-export const computeStats = (data) => {
-
-}
-
+export const computeStats = (data) => {};
+ */
 //const hembras = data.gender.Hembra.length
 /*const ciudades = [
   { id: 1, nombre: "New york", temperatura: 25 },

@@ -98,7 +98,7 @@ export default [
       filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'Una de las frases más icónicas de Marie es: "Porque soy una dama, por eso". Su diseño está inspirado en la raza Angora Turco.'
+      curiousFact: 'Una de las frases más icónicas de Marie es: "Porque soy una dama, por eso".'
     }
   },
   {
@@ -132,7 +132,7 @@ export default [
       filmGenre: ['Comedia', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'El nombre “Duquesa” refleja un enfoque aristocrático y refinado, subrayando a una gata de alta sociedad en la romántica y culturalmente rica ciudad de París.'
+      curiousFact: 'Su nombre refleja a una gata de alta sociedad en la romántica y culturalmente rica ciudad de París.'
     }
   },
   {
@@ -268,7 +268,7 @@ export default [
       filmGenre: ['Drama', 'Musical']
     },
     extraInfo: {
-      curiousFact: 'Sus sonidos fueron creados por el legendario actor de voz Frank Welker, quien también ha dado vida a personajes como Scooby-Doo y el gato Garfield.'
+      curiousFact: 'Sus sonidos fueron creados por el actor de voz Frank Welker, mismo que ha dado vida a Scooby-Doo y el gato Garfield.'
     }
   },
   {
@@ -333,7 +333,7 @@ export default [
       speciesGroup: 'Domestico',
       gender: 'Hembra',
       livesIn: 'Casa de Querida y Querido',
-      filmGenre: ['Fantasía', 'Romance', 'Familiar']
+      filmGenre: ['Romance', 'Familiar']
     },
     extraInfo: {
       curiousFact: 'La escena del espagueti es una de las más icónicas del cine animado y ha sido parodiada en numerosas ocasiones.'

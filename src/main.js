@@ -1,22 +1,19 @@
-import { filterData, sortData, computeStats } from "./dataFunctions.js";
+import { filterData, sortData, computeStats} from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
 
-//Ubicar en dónde se va a posicionar el renderItems en la página: <section id="root">
-const elementSection = document.querySelector('section[id="root"]'); //Crear un elementoHTML(<section id="root">) y llamarlo con un selector del DOM
-elementSection.appendChild(renderItems(data)); //Situar la lista no ordenada (ul) de view.js dentro de la etiqueta section con la constante renderItems(data)
+const elementSection = document.querySelector('section[id="root"]'); 
+elementSection.appendChild(renderItems(data)); 
 
-let filteredData = data; //Variable de tipo let para guardar la data filtrada
+let filteredData = data;
 
-//Manejo del DOM para detectar la interaccion de la usuaria con los filtros
-const filterSpecies = document.querySelector("select[id=specie-select]"); //Llamar el elemento select con un selector DOM (con su id="root") y guardarlo en una constante
+const filterSpecies = document.querySelector("select[id=specie-select]"); 
 filterSpecies.addEventListener("change", function (event) {
-  //Esuchar el evento change sobre el select del filtro por especie
-  elementSection.innerHTML = ""; //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
-  const valorSeleccionado = event.target.value; //Constante para guardar el valor que seleccione al usuario, será el dato asignado a value
-  filteredData = filterData(data, "speciesGroup", valorSeleccionado); //Guardar en una constante las especificaciones de filterData de acuerdo a la propiedad a filtrar
-  elementSection.appendChild(renderItems(filteredData)); //Llamar a renderItems y pasarle como parametro la const filteredDataSpecies
+  elementSection.innerHTML = "";
+  const valorSeleccionado = event.target.value;
+  filteredData = filterData(data, "speciesGroup", valorSeleccionado);
+  elementSection.appendChild(renderItems(filteredData));
 });
 
 const filterGender = document.querySelector("select[id=gender-select]");
@@ -35,13 +32,11 @@ filterFilmGenre.addEventListener("change", function (event) {
   elementSection.appendChild(renderItems(filteredData));
 });
 
-//Manejo del DOM para ordenar por orden alfabético
-const sortDataAsc = document.querySelector("button[id=btnUp]"); //Llamar al botón de orden ascendente
+const sortDataAsc = document.querySelector("button[id=btnUp]");
 sortDataAsc.addEventListener("click", function () {
-  //Escuchar el evento click sobre el boton de ordenar ascendente
-  elementSection.innerHTML = ""; //Para eliminar el renderizado. Se asigna una cadena vacía como contenido HTML al elementSection
-  const ordenAsc = sortData([...filteredData], "name", "ascendente"); //Constante para guardar la funcion de sortData con se le pasa como parametro filteredData
-  elementSection.appendChild(renderItems(ordenAsc)); //Llamar a renderItems y pasarle como parametro la const ordenAsc
+  elementSection.innerHTML = "";
+  const ordenAsc = sortData([...filteredData], "name", "ascendente");
+  elementSection.appendChild(renderItems(ordenAsc));
 });
 
 const sortDataDesc = document.querySelector("button[id=btnDown]");
@@ -51,50 +46,37 @@ sortDataDesc.addEventListener("click", function () {
   elementSection.appendChild(renderItems(ordenDesc));
 });
 
-//Manejo de DOM para el botón de limpiar filtros
-const filterClear = document.querySelector("button[id=btnClear]"); //Llamar al button
+const filterClear = document.querySelector("button[id=btnClear]");
 filterClear.addEventListener("click", function () {
-  //Escuchar el evento click
-  elementSection.innerHTML = ""; // Vaciar el contenido de elementSection; vaciar el contenido del section que muestra la data
-  elementSection.appendChild(renderItems(data)); // Renderizar a la data original
-  filterSpecies.value = ""; // Restablecer los valores de los selectores de cada filtro ('' una cadena vacía)
+  elementSection.innerHTML = "";
+  elementSection.appendChild(renderItems(data));
+  filterSpecies.value = "";
   filterGender.value = "";
   filterFilmGenre.value = "";
 });
 
-/*const estadistica = document.querySelector('button[id=btn-stats]');
-estadistica.addEventListener('click', function(){
-  const hembrasTotal = computeStats(data);
-  console.log(hembrasTotal);
- //const resultadoHembras = computeStats(data, 'gender', 'Hembra');
- //console.log(resultadoHembras)
-  //return data
-});*/
-
-//Manejo de DOM para botón de estadistica
 const estadistica = document.querySelector("button[id=btn-stats]");
 estadistica.addEventListener("click", function () {
-  const hembraCalculo = computeStats(data, "gender", "porcentajeHembras");
+  const hembraCalculo = computeStats(data, "Hembra");
   console.log(
-    `Las hembras representan el ${hembraCalculo}% del total de animalitos`
+    `Las hembras representan el ${hembraCalculo.hembras}% del total de animalitos`
   );
 
   const porcentajesEspecies = {
-    aves: computeStats(data, "speciesGroup", "porcentajeAves"),
-    acuaticos: computeStats(data, "speciesGroup", "porcentajeAcuaticos"),
-    domesticos: computeStats(data, "speciesGroup", "porcentajeDomesticos"),
-    especiesPequeñas: computeStats(data, "speciesGroup", "porcentajeEspeciesPequeñas"),
-    granja: computeStats(data, "speciesGroup", "porcentajeGranja"),
-    salvajes: computeStats(data, "speciesGroup", "porcentajeSalvajes"),
-  };
-  console.log(porcentajesEspecies)
+    aves: computeStats(data, 'Aves'),
+    acuaticos: computeStats(data, "Animales Acuáticos"),
+    domesticos: computeStats(data, "Domestico"),
+    especiesPequeñas: computeStats(data, "Pequeñas especies"),
+    granja: computeStats(data, "Animales de Granja"),
+    salvajes: computeStats(data, "Animales Salvajes"),
+  }
 
   let grupoMayorEspecies = "";
   let porcentajeMayorEspecies = 0;
 
   for (const group in porcentajesEspecies) {
-    if (porcentajesEspecies[group] > porcentajeMayorEspecies) {
-      porcentajeMayorEspecies = porcentajesEspecies[group];
+    if (porcentajesEspecies[group].especies > porcentajeMayorEspecies) {
+      porcentajeMayorEspecies = porcentajesEspecies[group].especies;
       grupoMayorEspecies = group;
     }
   }
@@ -104,21 +86,20 @@ estadistica.addEventListener("click", function () {
   ); //muestra el grupo de especie con mayor porcentaje y el %
 
   const porcentajePeliculas = {
-    comedia: computeStats(data, "filmGenre", "porcentajeComedia"),
-    infantil: computeStats(data, "filmGenre", "porcentajeInfantil"),
-    fantasia: computeStats(data, "filmGenre", "porcentajeFantasia"),
-    musical: computeStats(data, "filmGenre", "porcentajeMusical"),
-    drama: computeStats(data, "filmGenre", "porcentajeDrama"),
-    romance: computeStats(data, "filmGenre", "porcentajeRomance"),
+    comedia: computeStats(data, 'Comedia'),
+    infantil: computeStats(data, 'Infantil'),
+    fantasia: computeStats(data, 'Fantasía'),
+    musical: computeStats(data, 'Musical'),
+    drama: computeStats(data, 'Drama'),
+    romance: computeStats(data, 'Romance'),
   };
-  //console.log(porcentajePeliculas)
 
   let grupoMayorPeliculas = "";
   let porcentajeMayorPeliculas = 0;
 
   for (const pelicula in porcentajePeliculas) {
-    if (porcentajePeliculas[pelicula] > porcentajeMayorPeliculas) {
-      porcentajeMayorPeliculas = porcentajePeliculas[pelicula];
+    if (porcentajePeliculas[pelicula].peliculas > porcentajeMayorPeliculas) {
+      porcentajeMayorPeliculas = porcentajePeliculas[pelicula].peliculas;
       grupoMayorPeliculas = pelicula;
     }
   }

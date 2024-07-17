@@ -1,12 +1,26 @@
 export const filterData = (data, filterBy, value) => {
+  if (filterBy === "filmGenre") {
+    const filterGenre = data.filter((item) =>
+      item.facts.filmGenre.includes(value)
+    );
+    return filterGenre;
+  }
+  const filterSpecies = data.filter(
+    (item) => item.facts[filterBy] === value);
+  return filterSpecies;
+};
+
+
+
+//Este codigo lo escribimos antes de la modificacion sugerida con Ivy
+/*export const filterData = (data, filterBy, value) => {
   if (filterBy === "gender") {
     const filterGender = data.filter((item) => item.facts.gender === value);
     return filterGender;
   }
   if (filterBy === "speciesGroup") {
     const filterSpecies = data.filter(
-      (item) => item.facts.speciesGroup === value
-    );
+      (item) => item.facts[filterBy] === value);
     return filterSpecies;
   }
   if (filterBy === "filmGenre") {
@@ -14,8 +28,7 @@ export const filterData = (data, filterBy, value) => {
       item.facts.filmGenre.includes(value)
     );
     return filterGenre;
-  }
-};
+  }*/
 
 export const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name") {
@@ -33,6 +46,7 @@ export const sortData = (data, sortBy, sortOrder) => {
     return data; 
   }
 };
+
 
 export const computeStats = (data, value) => {
   //*PORCENTAJE DE HEMBRAS
@@ -68,5 +82,3 @@ export const computeStats = (data, value) => {
     peliculas: Math.round(calculo_pelicula),
   }
 };
-
-

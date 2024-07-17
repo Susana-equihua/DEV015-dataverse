@@ -1,4 +1,4 @@
-import { filterData, sortData } from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats} from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
 console.log(fakeData);
@@ -48,25 +48,11 @@ describe('sortData', () => {                                     //Describe un b
 });
 
 
-/*import { filterData } from "../src/dataFunctions.js";
-import { data as fakeData } from "./data.js";
-//console.log(fakeData);
-describe("filterData", () => {
-  it("Retorna la data filtrada por género (macho/hembra)", () => {
-    const dataFalsaFiltrada = fakeData.map((obj) => [obj]);
-    expect(filterData(fakeData, "gender", "Hembra")).toEqual(dataFalsaFiltrada[2]); //buscar un código para que fake data busque la posición
-  });
-  it("Retorna la data filtrada por grupo de especie", () => {
-    const dataFalsaFiltrada = fakeData.map((obj) => [obj]);
-    expect(filterData(fakeData, "speciesGroup", "Gatos")).toEqual(dataFalsaFiltrada[1]); //buscar un código para que fake data busque la posición
-  });
-  it("Retorna la data filtrada por género de película", () => {
-    const dataFalsaFiltrada = fakeData.filter((obj) => obj.facts.filmGenre.includes(" Musical"));
-    expect(filterData(fakeData, "filmGenre", " Musical")).toEqual(dataFalsaFiltrada); //buscar un código para que fake data busque la posición
+//computeStats calcula correctamente el porcentaje de hembras que hay en fakeData
+describe('computeStats',()=>{
+  it('returns `sortData`',() =>{
+    const porcentaje = computeStats(data, value);
+    expect(porcentaje)
   });
 });
-/*describe('sortData', () => {
-  it('returns anotherExample', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
+

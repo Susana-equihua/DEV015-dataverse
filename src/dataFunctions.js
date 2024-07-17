@@ -12,15 +12,30 @@
 //7) El nuevo arreglo contiene solo a los personajes que cumplen con la condicion
 //Console.log, mostrará en la consola la data filtrada
 
+//Codigo factorizado
 export const filterData = (data, filterBy, value) => {
+  if (filterBy === "filmGenre") {
+    const filterGenre = data.filter((item) =>
+      item.facts.filmGenre.includes(value)
+    );
+    return filterGenre;
+  }
+  const filterSpecies = data.filter(
+    (item) => item.facts[filterBy] === value);
+  return filterSpecies;
+};
+
+
+
+//Este codigo lo escribimos antes de la modificacion sugerida con Ivy
+/*export const filterData = (data, filterBy, value) => {
   if (filterBy === "gender") {
     const filterGender = data.filter((item) => item.facts.gender === value);
     return filterGender;
   }
   if (filterBy === "speciesGroup") {
     const filterSpecies = data.filter(
-      (item) => item.facts.speciesGroup === value
-    );
+      (item) => item.facts[filterBy] === value);
     return filterSpecies;
   }
   if (filterBy === "filmGenre") {
@@ -28,8 +43,7 @@ export const filterData = (data, filterBy, value) => {
       item.facts.filmGenre.includes(value)
     );
     return filterGenre;
-  }
-};
+  }*/
 
 export const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name") {
@@ -40,7 +54,7 @@ export const sortData = (data, sortBy, sortOrder) => {
         if (a.name > b.name) return 1; //b aparece antes
       }
       if (sortOrder === "descendente") {
-        //Añadir el parametro sortOrder descendente; la lógica de invierte
+        //Añadir el parametro sortOrder descendente; la lógica se invierte
         if (a.name < b.name) return 1; //a aparece antes
         if (a.name > b.name) return -1; //b aparece antes
       }
@@ -50,7 +64,46 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 };
 
-export const computeStats = (data, property, statsBy) => {
+//CODIGO FACTORIZADO PARA LA FUNCION COMPUTESTATS (porcentajes)
+export const computeStats = (data, value) => {
+  //*PORCENTAJE DE HEMBRAS
+  const genero = data.reduce((contador, obj) => {
+    if (obj.facts.gender === value) {
+      contador += 1;
+    }
+    return contador;
+  }, 0);
+  const calculo_genero = (genero / data.length) * 100;
+  
+  //*PORCENTAJE DE ESPECIES
+  const especie = data.reduce((contador, obj) => {
+    if (obj.facts.speciesGroup === value) {
+      contador += 1;
+    }
+    return contador;
+  }, 0);
+  const calculo_especie = (especie / data.length) * 100;
+  
+  //*PORCENTAJE DE GENEROS DE PELICULAS
+  const pelicula = data.reduce((contador, obj) => {
+    if (obj.facts.filmGenre.includes(value)) {
+      contador += 1;
+    }
+    return contador;
+  }, 0);
+  const calculo_pelicula = (pelicula / data.length) * 100;
+  
+  return {
+    hembras: Math.round(calculo_genero),
+    especies: Math.round(calculo_especie),
+    peliculas: Math.round(calculo_pelicula),
+  }
+};
+
+
+
+//Código que escribió Pame para sacar los porcentajes
+/*export const computeStats = (data, property, statsBy) => {
   //*PORCENTAJE DE HEMBRAS
 
   if (statsBy === "porcentajeHembras") {
@@ -212,4 +265,4 @@ export const computeStats = (data, property, statsBy) => {
     const calculoRomance = (romance / data.length) * 100;
     return Math.round(calculoRomance);
   }
-};
+};*/

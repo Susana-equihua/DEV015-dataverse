@@ -308,7 +308,7 @@ select:hover{
 }
 /*CONTENEDOR DEL TEXTO*/
 #text {
-    border: 2px dashed rgb(0, 42, 255);*
+    border: 2px dashed rgb(0, 42, 255);
     display: flex;
     width: 290px;
     max-width: 290px;
@@ -377,6 +377,73 @@ footer p {
 }
 
 
+/*MODAL*/
+.modal{
+    position:fixed;
+    top:0;                                       /*Estos 0 harán que ocupe el 100% de la página*/
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(95, 71, 14, 0.34);                 /*Color de fondo con transparencia (bd)*/
+    display: flex;
+    opacity: 0;                             /*Modal sea invisible en la pantalla, pero si qusieramos seleccionar algo no se puede porque porque sigue estando arriba de todo la pagina web*/
+    pointer-events: none;                   /*Con esta propiedad ya se puede seleccionar a algun elemento de la pagina*/
+    transition: opacity .6s;                /*Transicion a la opacidad para que tarde 6s en desaparecer y no sea de golpe el modal*/
+}
+/*CLASE PARA QUE SE VISUALICE EL MODAL (depsues de haberlo hecho invisible)*/
+/*modal--show va a controlar la visibilidad o el estilo del modal*/
+.modal--show{                                /*Es una clase modificadora. Queremos que modal tenga un modificador para que sea visible o no en nuestra ventana*/
+    opacity: 1;                              /*Modal vuelve a ser visible*/
+    pointer-events: unset;   
+    transition: opacity .6s;                /*Transicion a la opacidad para que tarde 6s ser visible y no aparezca de golpe el modal*/
+}
+.modal-container{  
+    border: 2px dashed rgb(251, 248, 93);                
+    margin: auto;                              /*Desktop*/    /*Porque su padre (modal) tiene un display flex*/
+    width: 80%;
+    height: 70%;
+    /*max-height: 600px;                          /*Que la altura cubra el 70% siempre y cuando sea menor a 600px*/
+    background-color: #01387F;  
+    border-radius: 50px;    
+    padding: 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    box-shadow: 0px 0px 14px 8px rgba(0, 0, 0, 0.4);
+}
+/*El margin auto es para que centre horizontal y verticalmente nuestro contenedor*/
+/*TITULO DEL MODAL*/
+.title-modal{
+    text-align: center;
+    font-size: 1.1em;
+    color: #E4F3FF;
+}
+/*TEXTO DE LOS PORCENTAJES*/
+.stats-paragraph{
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    border: 2px dashed rgb(251, 93, 214);
+   
+}
+/*BOTON PARA BORRAR EL MODAL*/
+.modal-close{
+    text-decoration: none;
+    background-color: #FFB80D;                  /*Color de fondo del boton*/
+    color: white;                               /*Color del texto del boton*/                           
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;                              /*El cursor se vuelve una mano al posicionarse sobre el botón*/
+    border-radius: 95px;                       /*Borde redondeado*/
+    border:none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    margin: 10px;
+    width: 40%;
+}
+ 
 
 
 /*TABLET*/
@@ -446,6 +513,23 @@ footer p {
     footer p{
         font-size: 0.9em;
         text-align: center;   
+    }
+    .modal-container{  
+        margin: auto;                              /*Desktop*/    /*Porque su padre (modal) tiene un display flex*/
+        width: 50%;
+        height: 60%;
+        padding: 3em;
+    }
+    .title-modal{
+        font-size: 1.6em;
+    }
+    .stats-paragraph{
+        font-size: 1.1em;
+        border: 2px dashed rgb(251, 93, 214);
+    }
+    /*BOTON PARA BORRAR EL MODAL*/
+    .modal-close{
+        font-size: 1.1em;
     }
 }
 
@@ -526,6 +610,30 @@ footer p {
     footer p{
         font-size: 0.9em;
         text-align: center;   
+    }
+    .modal-container{
+        margin: auto;                              /*Desktop*/    /*Porque su padre (modal) tiene un display flex*/
+        width: 70%;
+        height: 45vh;   
+        padding: 2em;
+        justify-content: space-between;
+    }
+    .container-percentage{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .title-modal{
+        font-size: 1.1em;
+    }
+    .stats-paragraph{
+        font-size: 0.8em;
+        border: 2px dashed rgb(251, 93, 214);
+    }
+    /*BOTON PARA BORRAR EL MODAL*/
+    .modal-close{
+        width: 20%;
+        font-size: 0.9em;
     }
 }
 

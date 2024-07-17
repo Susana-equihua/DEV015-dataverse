@@ -62,17 +62,30 @@ filterClear.addEventListener("click", function () {
   filterFilmGenre.value = "";
 });
 
-/*const estadistica = document.querySelector('button[id=btn-stats]');
-estadistica.addEventListener('click', function(){
-  const hembrasTotal = computeStats(data);
-  console.log(hembrasTotal);
- //const resultadoHembras = computeStats(data, 'gender', 'Hembra');
- //console.log(resultadoHembras)
-  //return data
-});*/
+
+//Manejo de DOM para botón de estadistica / Modal
+const porcentaje = document.querySelector("button[id=btn-stats]");
+const mostrarModal = document.querySelector('.modal'); 
+const closeModal = document.querySelector('.modal-close');              
+
+porcentaje.addEventListener("click", function () {
+  //Entramos a modal a través de la constante que la hemos guardado, y le agregamos una nueva clase llamada modal--show
+  mostrarModal.classList.add('modal--show');                         //Este metodo se utiliza para agregar una o más clases a un elemento html
+});
+
+closeModal.addEventListener("click", function () {
+  //Entramos a modal a través de la constante que la hemos guardado, y removemos la clase llamada modal--show
+  mostrarModal.classList.remove('modal--show');                         //Este metodo se utiliza para remover la clase del elemento html
+});
+
+
+
+
+
 
 //Manejo de DOM para botón de estadistica
-const estadistica = document.querySelector("button[id=btn-stats]");
+//CODIGO FUNCIONAL ESCRITO POR PAME
+/*const estadistica = document.querySelector("button[id=btn-stats]");
 estadistica.addEventListener("click", function () {
   const hembraCalculo = computeStats(data, "gender", "porcentajeHembras");
   console.log(
@@ -126,4 +139,4 @@ estadistica.addEventListener("click", function () {
   console.log(
     `El genero de pelicula con mas porcentaje es ${grupoMayorPeliculas} con ${porcentajeMayorPeliculas}%`
   );
-});
+});*/

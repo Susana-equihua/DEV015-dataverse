@@ -50,13 +50,13 @@ export const sortData = (data, sortBy, sortOrder) => {
 
 export const computeStats = (data, value) => {
   //*PORCENTAJE DE HEMBRAS
-  const hembras = data.reduce((contador, obj) => {
+  const genero = data.reduce((contador, obj) => {
     if (obj.facts.gender === value) {
       contador += 1;
     }
     return contador;
   }, 0);
-  const calculo_hembras = (hembras / data.length) * 100;
+  const calculo_hembras = (genero / data.length) * 100;
   
   //*PORCENTAJE DE ESPECIES
   const especie = data.reduce((contador, obj) => {
@@ -77,7 +77,7 @@ export const computeStats = (data, value) => {
   const calculo_pelicula = (pelicula / data.length) * 100;
   
   return {
-    hembras: Math.round(calculo_hembras),
+    genero: Math.round(calculo_hembras),
     especies: Math.round(calculo_especie),
     peliculas: Math.round(calculo_pelicula),
   }

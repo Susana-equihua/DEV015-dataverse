@@ -16,7 +16,7 @@ body {
 
 /*TITULO DE LA PÁGINA*/
 h1 {
-  border: 2px dashed rgb(0, 255, 81); /*Borde para identificarlo*/
+  /*border: 2px dashed rgb(0, 255, 81); /*Borde para identificarlo*/
   font-size: 1.9em;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@ h1 {
 }
 /*SUBTITULO DE BIENVENIDA*/
 h2 {
-  border: 2px dashed red;
+  /*border: 2px dashed red;*/
   font-size: 1.6em;
   text-align: center;
   margin: 15px;
@@ -39,7 +39,7 @@ h2 {
 }
 /*TEXTO DE BIENVENIDA*/
 #parrafoBienvenidos {
-  border: 2px dashed rgb(63, 58, 58); /*Borde para identificarlo*/
+  /*border: 2px dashed rgb(63, 58, 58); /*Borde para identificarlo*/
   font-size: 0.9em;
   text-align: center;
   margin: 15px;
@@ -57,6 +57,7 @@ header{         /*ESTILO PARA PANTALLA DE ESCRITORIO*/
     height: 100vh;                              /*El elemento va a ocupar toda la altura visible del navegador*/
     background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%); /*Fondo*/
     width: 100%;
+    background-image: url(https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/background_main-head.jpg);
 }
 /*CONTENDER (DIV) DE HEADER*/
 header .container {
@@ -196,6 +197,7 @@ aside .container{
     height: 130px;
     margin: 15px;
     columns:2;
+    transition: display 0.6s;
 }
 /*LINEA "FILTRA A LAS MASCOTAS"*/
 /*#filtra{
@@ -291,7 +293,7 @@ select:hover{
 /*TARJETAS INDIVIDUALES - TEXTO*/
 /*CONTENEDOR DE CADA TARJETA*/
 #text-card {
-    border: 2px dashed red;
+    /*border: 2px dashed red;*/
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -308,7 +310,7 @@ select:hover{
 }
 /*CONTENEDOR DEL TEXTO*/
 #text {
-    border: 2px dashed rgb(0, 42, 255);
+    /*border: 2px dashed rgb(0, 42, 255);*/
     display: flex;
     width: 290px;
     max-width: 290px;
@@ -398,7 +400,7 @@ footer p {
     transition: opacity .6s;                /*Transicion a la opacidad para que tarde 6s ser visible y no aparezca de golpe el modal*/
 }
 .modal-container{  
-    border: 2px dashed rgb(251, 248, 93);                
+    /*border: 2px dashed rgb(251, 248, 93); */               
     margin: auto;                              /*Desktop*/    /*Porque su padre (modal) tiene un display flex*/
     width: 80%;
     height: 70%;
@@ -414,18 +416,38 @@ footer p {
 }
 /*El margin auto es para que centre horizontal y verticalmente nuestro contenedor*/
 /*TITULO DEL MODAL*/
+.container-percentage{
+    /*border: 2px dashed rgb(251, 93, 214);*/
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
 .title-modal{
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #E4F3FF;
 }
 /*TEXTO DE LOS PORCENTAJES*/
 .stats-paragraph{
+    margin: 10px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: white;
-    border: 2px dashed rgb(251, 93, 214);
-   
+    /*border: 2px dashed rgb(251, 93, 214);*/
+}
+/*TEXTO DE LOS PORCENTAJES*/
+.valor{
+    color: #FCCA51;
+    font-weight: 600;
+}
+.porcentaje{ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    color: #FCCA51;
 }
 /*BOTON PARA BORRAR EL MODAL*/
 .modal-close{
@@ -515,9 +537,9 @@ footer p {
         text-align: center;   
     }
     .modal-container{  
-        margin: auto;                              /*Desktop*/    /*Porque su padre (modal) tiene un display flex*/
+        margin: auto;                                /*Porque su padre (modal) tiene un display flex*/
         width: 50%;
-        height: 60%;
+        height: 70%;
         padding: 3em;
     }
     .title-modal{
@@ -525,7 +547,7 @@ footer p {
     }
     .stats-paragraph{
         font-size: 1.1em;
-        border: 2px dashed rgb(251, 93, 214);
+        /*border: 2px dashed rgb(251, 93, 214);*/
     }
     /*BOTON PARA BORRAR EL MODAL*/
     .modal-close{
@@ -575,7 +597,7 @@ footer p {
         height: 5vh;
     }
     aside .container{
-        border: 2px dashed rgb(0, 255, 81);
+        /*border: 2px dashed rgb(0, 255, 81);*/
         height: 12vh;
         padding: 0px 8px;
         width: 90%;
@@ -628,7 +650,7 @@ footer p {
     }
     .stats-paragraph{
         font-size: 0.8em;
-        border: 2px dashed rgb(251, 93, 214);
+        /*border: 2px dashed rgb(251, 93, 214);*/
     }
     /*BOTON PARA BORRAR EL MODAL*/
     .modal-close{

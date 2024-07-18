@@ -1,5 +1,6 @@
-import { computeStats, filterData, sortData } from "../src/dataFunctions.js";
-import { data as fakeData } from "./data.js";
+import { filterData, sortData, computeStats} from '../src/dataFunctions.js';
+import { data as fakeData } from './data.js';
+console.log(fakeData);
 
 describe("filterData", () => {
   it("returns `filterData`", () => {

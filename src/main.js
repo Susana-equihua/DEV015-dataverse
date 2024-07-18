@@ -56,21 +56,28 @@ filterClear.addEventListener("click", function () {
 });
 
 const estadistica = document.querySelector("button[id=btn-stats]");
+const mostrarModal = document.querySelector('.modal');               
+const closeModal = document.querySelector('.modal-close');   
+const hembra = document.querySelector('#genero'); 
+const especie = document.querySelector('#especie'); 
+const especieNum = document.querySelector('#numEspecie'); 
+const filmGenero = document.querySelector('#genreFilm'); 
+const numFilmGenero = document.querySelector('#num-genreFilm');  
+
 estadistica.addEventListener("click", function () {
+  mostrarModal.classList.add('modal--show');                           
   const hembraCalculo = computeStats(data, "Hembra");
-  console.log(
-    `Las hembras representan el ${hembraCalculo.hembras}% del total de animalitos`
-  );
+  console.log(`Las hembras representan el ${hembraCalculo.genero}% del total de animalitos`);
+  hembra.innerHTML = hembraCalculo.genero + '%';
 
   const porcentajesEspecies = {
-    aves: computeStats(data, "Aves"),
+    aves: computeStats(data, 'Aves'),
     acuaticos: computeStats(data, "Animales Acuáticos"),
     domesticos: computeStats(data, "Domestico"),
     especiesPequeñas: computeStats(data, "Pequeñas especies"),
     granja: computeStats(data, "Animales de Granja"),
     salvajes: computeStats(data, "Animales Salvajes"),
-  };
-
+  }
   let grupoMayorEspecies = "";
   let porcentajeMayorEspecies = 0;
 
@@ -80,18 +87,20 @@ estadistica.addEventListener("click", function () {
       grupoMayorEspecies = group;
     }
   }
-
   console.log(
     `El grupo de especie con mayor porcentaje es: ${grupoMayorEspecies} con ${porcentajeMayorEspecies}%`
   );
 
+  especie.innerHTML = grupoMayorEspecies;
+  especieNum.innerHTML = porcentajeMayorEspecies + '%';
+
   const porcentajePeliculas = {
-    comedia: computeStats(data, "Comedia"),
-    infantil: computeStats(data, "Infantil"),
-    fantasia: computeStats(data, "Fantasía"),
-    musical: computeStats(data, "Musical"),
-    drama: computeStats(data, "Drama"),
-    romance: computeStats(data, "Romance"),
+    comedia: computeStats(data, 'Comedia'),
+    infantil: computeStats(data, 'Infantil'),
+    fantasia: computeStats(data, 'Fantasía'),
+    musical: computeStats(data, 'Musical'),
+    drama: computeStats(data, 'Drama'),
+    romance: computeStats(data, 'Romance'),
   };
 
   let grupoMayorPeliculas = "";
@@ -107,4 +116,21 @@ estadistica.addEventListener("click", function () {
   console.log(
     `El genero de pelicula con mas porcentaje es ${grupoMayorPeliculas} con ${porcentajeMayorPeliculas}%`
   );
+  filmGenero.innerHTML = grupoMayorPeliculas;
+  numFilmGenero.innerHTML = porcentajeMayorPeliculas + '%';
+});
+
+closeModal.addEventListener("click", function () {
+  mostrarModal.classList.remove('modal--show');
+});
+
+
+const buttonFilter = document.querySelector('#btn-filter');
+const filterMenu = document.querySelector('aside .container');
+buttonFilter.addEventListener("click", function(){
+  if(filterMenu.style.visibility == 'hidden'){
+    filterMenu.style.visibility = 'visible';
+  } else{
+    filterMenu.style.visibility = 'hidden'
+  }
 });

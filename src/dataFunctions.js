@@ -1,21 +1,15 @@
 export const filterData = (data, filterBy, value) => {
-  if (filterBy === "gender") {
-    const filterGender = data.filter((item) => item.facts.gender === value);
-    return filterGender;
-  }
-  if (filterBy === "speciesGroup") {
-    const filterSpecies = data.filter(
-      (item) => item.facts.speciesGroup === value
-    );
-    return filterSpecies;
-  }
   if (filterBy === "filmGenre") {
     const filterGenre = data.filter((item) =>
       item.facts.filmGenre.includes(value)
     );
     return filterGenre;
   }
+  const filterSpecies = data.filter(
+    (item) => item.facts[filterBy] === value);
+  return filterSpecies;
 };
+
 
 export const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name") {
@@ -34,15 +28,16 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 };
 
+
 export const computeStats = (data, value) => {
-  const hembras = data.reduce((contador, obj) => {
+  const genero = data.reduce((contador, obj) => {
     if (obj.facts.gender === value) {
       contador += 1;
     }
     return contador;
   }, 0);
-  const calculo_hembras = (hembras / data.length) * 100;
-
+  const calculo_hembras = (genero / data.length) * 100;
+ 
   const especie = data.reduce((contador, obj) => {
     if (obj.facts.speciesGroup === value) {
       contador += 1;
@@ -60,8 +55,8 @@ export const computeStats = (data, value) => {
   const calculo_pelicula = (pelicula / data.length) * 100;
 
   return {
-    hembras: Math.round(calculo_hembras),
+    genero: Math.round(calculo_hembras),
     especies: Math.round(calculo_especie),
     peliculas: Math.round(calculo_pelicula),
-  };
+  }
 };

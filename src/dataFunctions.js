@@ -38,12 +38,12 @@ export const sortData = (data, sortBy, sortOrder) => {
         if (a.name > b.name) return 1;
       }
       if (sortOrder === "descendente") {
-        if (a.name < b.name) return 1; 
+        if (a.name < b.name) return 1;
         if (a.name > b.name) return -1;
       }
       return 0;
     });
-    return data; 
+    return data;
   }
 };
 
@@ -66,8 +66,7 @@ export const computeStats = (data, value) => {
     return contador;
   }, 0);
   const calculo_especie = (especie / data.length) * 100;
-  
-  //*PORCENTAJE DE GENEROS DE PELICULAS
+
   const pelicula = data.reduce((contador, obj) => {
     if (obj.facts.filmGenre.includes(value)) {
       contador += 1;
@@ -75,7 +74,7 @@ export const computeStats = (data, value) => {
     return contador;
   }, 0);
   const calculo_pelicula = (pelicula / data.length) * 100;
-  
+
   return {
     genero: Math.round(calculo_hembras),
     especies: Math.round(calculo_especie),

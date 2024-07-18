@@ -1,14 +1,14 @@
-import { filterData, sortData, computeStats} from "./dataFunctions.js";
+import { filterData, sortData, computeStats } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
 
-const elementSection = document.querySelector('section[id="root"]'); 
-elementSection.appendChild(renderItems(data)); 
+const elementSection = document.querySelector('section[id="root"]');
+elementSection.appendChild(renderItems(data));
 
 let filteredData = data;
 
-const filterSpecies = document.querySelector("select[id=specie-select]"); 
+const filterSpecies = document.querySelector("select[id=specie-select]");
 filterSpecies.addEventListener("change", function (event) {
   elementSection.innerHTML = "";
   const valorSeleccionado = event.target.value;
@@ -167,13 +167,13 @@ closeModal.addEventListener("click", function () {
   );
 
   const porcentajesEspecies = {
-    aves: computeStats(data, 'Aves'),
+    aves: computeStats(data, "Aves"),
     acuaticos: computeStats(data, "Animales Acuáticos"),
     domesticos: computeStats(data, "Domestico"),
     especiesPequeñas: computeStats(data, "Pequeñas especies"),
     granja: computeStats(data, "Animales de Granja"),
     salvajes: computeStats(data, "Animales Salvajes"),
-  }
+  };
 
   let grupoMayorEspecies = "";
   let porcentajeMayorEspecies = 0;
@@ -187,15 +187,15 @@ closeModal.addEventListener("click", function () {
 
   console.log(
     `El grupo de especie con mayor porcentaje es: ${grupoMayorEspecies} con ${porcentajeMayorEspecies}%`
-  ); //muestra el grupo de especie con mayor porcentaje y el %
+  );
 
   const porcentajePeliculas = {
-    comedia: computeStats(data, 'Comedia'),
-    infantil: computeStats(data, 'Infantil'),
-    fantasia: computeStats(data, 'Fantasía'),
-    musical: computeStats(data, 'Musical'),
-    drama: computeStats(data, 'Drama'),
-    romance: computeStats(data, 'Romance'),
+    comedia: computeStats(data, "Comedia"),
+    infantil: computeStats(data, "Infantil"),
+    fantasia: computeStats(data, "Fantasía"),
+    musical: computeStats(data, "Musical"),
+    drama: computeStats(data, "Drama"),
+    romance: computeStats(data, "Romance"),
   };
 
   let grupoMayorPeliculas = "";

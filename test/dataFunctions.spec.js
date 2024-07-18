@@ -32,10 +32,18 @@ describe("sortData", () => {
     expect(orderDesc[1].name).toBe("Pascal");
   });
 });
-//computeStats calcula correctamente el porcentaje de hembras que hay en fakeData
-describe('computeStats',()=>{
-  it('returns `sortData`',() =>{
-    const porcentaje = computeStats(data, value);
-    expect(porcentaje)
+
+describe("computeStats", () => {
+  it("Retorna el porcentaje de hembras", () => {
+    const calculoHembras = computeStats(fakeData, "Hembra").hembras;
+    expect(calculoHembras).toEqual(33);
+  });
+  it('Retorna el porcentaje de grupo de especie "domesticos" ', () => {
+    const calculoEspecie = computeStats(fakeData, "Domestico").especies;
+    expect(calculoEspecie).toEqual(33);
+  });
+  it('Retorna el porcentaje de genero de pelicula "fantasia"', () => {
+    const calculoEspecie = computeStats(fakeData, "Fantasía").peliculas;
+    expect(calculoEspecie).toEqual(67);
   });
 });

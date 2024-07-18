@@ -45,7 +45,6 @@ header{
     height: 100vh;                              
     background: radial-gradient(92.68% 92.68% at 50% 69.48%, #12BBF0 17%, #0180CB 66%, #01387F 100%); 
     width: 100%;
-    background-image: url(https://raw.githubusercontent.com/Susana-equihua/DEV015-dataverse/main/Disney%20pets/background_main-head.jpg);
 }
 header .container {
   display: flex; 
@@ -149,7 +148,7 @@ aside {
   justify-content: center;
   text-align: center;
 }
-aside .container{
+aside .container {
     width: 90%;
     height: 130px;
     margin: 15px;

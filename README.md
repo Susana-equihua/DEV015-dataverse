@@ -4,7 +4,7 @@
 
 * [1. Definición del producto](#1-definición-del-producto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
+* [3. Diseño de la interfaz de usuaria](#3-diseño-de-la-interfaz-de-usuaria)
 * [4. Funcionalidades](#4-funcionalidades)
 * [5. Consideraciones técnicas](#5-consideraciones-técnicas)
 * [6. Hitos](#6-hitos)
@@ -18,21 +18,15 @@
 
 ## 1. Definición del producto
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-las usuarias, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
-
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+La página web desarrollada toma como tema principal "Las mascotas de Disney", este proyecto se creó con el objetivo de mostrar la información de una manera interactiva, atractiva y fácil de visualizar. 
+Nuestra página cuenta con las siguientes elementos y funcionalidades para su uso: 
+* **Botón "Conócelos":** Este elemeno permitirá a la usuaria dirigirse a la sección de tarjetas automáticamente. 
+* **Botón de Filtro:** Al darle click, las opciones de filtrado se mostrarán en pantalla, y al presionarlo nuevamente, desapareceran. 
+  - **Filtro por género:** La usuaria podrá filtrar a los personajes según hembra o macho. 
+  - **Filtro por tipo de mascota:** La usuaria podrá filtrar a los personajes según el grupo de especie al que pertenece el personaje. 
+  - **Filtro por género de película:** La usuaria podrá filtrar a los personajes según el género de película al que pertenece el personaje. 
+* **Botón de Limpiar Filtros:** Una vez aplicados los filtros, la usuaria podrá regresar a la vista inicial con todas las tarjetas al darle click a este botón. 
+* **Botones para Ordenar:** La página cuenta con dos botones para ordenar las tarjetas de la A a la Z, el primero lo hace de manera ascendente y el segundo, de manera descendente. Ambos botones funcionan aún cuando los filtros estén aplicados. 
 
 ## 2. Resumen del proyecto
 
@@ -56,18 +50,20 @@ nos referimos a distintos cálculos que puedes hacer con los datos para mostrar
 información aún más relevante a las usuarias (promedio, el valor máximo
 o mínimo, etc).
 
-## 3. Consideraciones generales
+## 3. Diseño de la interfaz de usuaria
 
-* Este proyecto se debe resolver en duplas.
-* El rango de tiempo estimado para completar el proyecto es de 4 a 5 Sprints.
-* El tiempo estimado que deberías dedicar a la [generación de los datos](#generar-los-datos)
-  es de máximo un sprint. Además, al final del proyecto deberás presentar
-  un [screenshot del prompt utilizado](#prompt-utilizado).
-* Si ves que te va a tomar más tiempo,
-  deberás utilizar los datos de ejemplo que los vas a encontrar en
-  esta ruta: `./src/data/dataset.js`.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
+### 3.1. Prototipado
+Para este proyecto se realizaron dos prototipos (de baja y alta fidelidad) diseñados para 3 principales dispositivos: celulares, tabletas y ordenadores, a continuación se muestran las imagenes de ambos: 
+- **Baja Fidelidad**: 
+
+| ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-4.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-3.png?raw=true) |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
+
+- **Alta Fidelidad**: 
+| ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-3.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-4.png?raw=true) |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
 
 ## 4. Funcionalidades
 

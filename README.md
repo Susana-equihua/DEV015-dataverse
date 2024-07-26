@@ -105,14 +105,35 @@ o mínimo, etc).
 Para este proyecto se realizaron dos prototipos (de baja y alta fidelidad) diseñados para 3 principales dispositivos: celulares, tabletas y ordenadores, a continuación se muestran las imagenes de ambos: 
 - **Baja Fidelidad**: 
 
-| ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-4.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-3.png?raw=true) |
-|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
-| Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
+  | ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-4.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-3.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
 
 - **Alta Fidelidad**: 
-| ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-3.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-4.png?raw=true) |
-|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
-| Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
+
+  | ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-3.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-4.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Versión Desktop 1                                          | Versión Mobile                                           | Versión Tablet                                           | Versión Tablet 2                                           |
+
+### 4. Prompting
+Para la recolección de la información que se iba a usar dentro de la página, recurrimos al uso de una inteligencia artificial (ChatGPT), al que le dimos las siguientes indicaciones: 
+- **Primer promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Primer%20prompt.png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
+
+- **Segundo promp:**
+
+  | ![Segundo promp pt1](https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Segundo%20prompt%20pt1.png?raw=true) | ![Segundo promp pt2](https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Segundo%20prompt%20pt2.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Parte 1                                            | Parte 2                                            |
+
+- **Tercer promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Tercer%20prompt%20(mejora%20de%20descripci%C3%B3n%20corta).png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
+
+- **Cuarto promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Quinto%20prompt%20(obtenci%C3%B3n%20de%20informaci%C3%B3n%20adicional%20para%20descripci%C3%B3n%20larga).png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
 
 ## 4. Funcionalidades
 

@@ -395,7 +395,7 @@ export default [
     },
     extraInfo: {
       curiousFact:
-        "Nana se basa en el perro de la familia del autor J.M. Barrie, creador de Peter Pan. A pesar de no tener diálogos, su expresión y acciones la hacen un personaje entrañable.",
+        "Nana se basa en el perro del autor J.M. Barrie, creador de Peter Pan. A pesar de no tener diálogos, su expresión y acciones la hacen un personaje entrañable.",
     },
   },
   {

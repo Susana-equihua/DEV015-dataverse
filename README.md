@@ -13,10 +13,19 @@
 
 ## 1. Definición del producto
 
+La página web desarrollada toma como tema principal "Las mascotas de Disney", este proyecto se creó con el objetivo de mostrar la información de una manera interactiva, atractiva y fácil de visualizar. 
+Nuestra página cuenta con las siguientes elementos y funcionalidades para su uso: 
+* **Botón "Conócelos":** Este elemeno permitirá a la usuaria dirigirse a la sección de tarjetas automáticamente. 
+* **Botón de Filtro:** Al darle click, las opciones de filtrado se mostrarán en pantalla, y al presionarlo nuevamente, desapareceran. 
+  - **Filtro por género:** La usuaria podrá filtrar a los personajes según hembra o macho. 
+  - **Filtro por tipo de mascota:** La usuaria podrá filtrar a los personajes según el grupo de especie al que pertenece el personaje. 
+  - **Filtro por género de película:** La usuaria podrá filtrar a los personajes según el género de película al que pertenece el personaje. 
+* **Botón de Limpiar Filtros:** Una vez aplicados los filtros, la usuaria podrá regresar a la vista inicial con todas las tarjetas al darle click a este botón. 
+* **Botones para Ordenar:** La página cuenta con dos botones para ordenar las tarjetas de la A a la Z, el primero lo hace de manera ascendente y el segundo, de manera descendente. Ambos botones funcionan aún cuando los filtros estén aplicados. 
+
 ## 2. Historias de Usuario
 
 ### Historia de Usuario 1:
-
 Como usuaria, quiero ver información interesante y detallada sobre las mascotas más 
 populares de disney, para conocer sobre los compañeros de mis personajes favoritos.
 
@@ -32,7 +41,6 @@ corta, su especie, el grupo de especie al que pertenece, donde vide, datos curio
 y el genero de la película al que pertenece.
 
 ### Historia de Usuario 2:
-
 Como usuaria, quiero que la visualización de la información sea fácil y llamativa, 
 para poder encontrar a mi personaje favorito rápido sin tener que hacer una lectura
 previa. 
@@ -46,7 +54,6 @@ El diseño de la página está basado al estilo Disney con colores llamativos y 
  legible. Las imágenes son grandes y resaltan en su fondo. 
 
 ### Historia de Usuario 3:
-
 Como usaria quiero poder filtrar las tarjetas por diferentes propiedades de los 
 personajes para poder conocerlos rápidamente acorde al tema de búsqueda en el que
 me encuentre interesada.
@@ -60,7 +67,7 @@ Los filtros se encuentran al inicio de la página, son fáciles de usar e intuit
 etiquetas claras. Los resultados deben actualizarse dinámicamente al aplicar o quitar 
 algún filtro. 
 
- ### Historia de Usuario 4:
+### Historia de Usuario 4:
 Como usuaria, quiero que las tarjetas se puedan ordenar de manera ascendente o descendente,
 para poder ver por orden alfabético el nombre de los personajes. 
 
@@ -74,7 +81,6 @@ ordenación ascendente y descendente de acuerdo al orden alfabetico del nombre d
 las mascotas. Al selecionar un orden la lista se actualiza automáticamente.
 
 ### Historia de Usuario 5:
-
 Como usuaria, quiero poder eliminar todos los filtros que haya aplicado, para poder
 explorar todas las tarjetas disponibles de la página.
 
@@ -101,8 +107,7 @@ La aplicacion muestra los porcentajes de personajes que son hembras o machos, el
 grupo de especie y el genero de pelicula al que pertenecen. La estadística es fácil 
 de leer y entender y se actualiza dinámicamente a medida que se da click. 
 
-### Historia de Usuario 6:
-
+### Historia de Usuario 7:
 Como usuaria, quiero que la página web tenga un diseño responsivo, para que pueda
 tener la experiencia de utilizarla desde diferentes dispositivos. 
 
@@ -116,9 +121,41 @@ móviles, tabletas, ordenadores de escritorio), con una navegacion clara y legib
 necesidad de hacer zoom. Los diferentes apartados se redimensionan correctamente para 
 mantener una apariencia estética.
 
-## 3. Generacion de Datos
+## 3. Diseño de la interfaz de usuaria
 
-## 4. Diseño de la Interfaz de Usuario
+### 3.1. Prototipado
+Para este proyecto se realizaron dos prototipos (de baja y alta fidelidad) diseñados para 3 principales dispositivos: celulares, tabletas y ordenadores, a continuación se muestran las imagenes de ambos: 
+- **Baja Fidelidad**: 
+
+  | ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-4.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-baja-fidelidad-3.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Versión Desktop 1                                          | Versión Desktop 2                                           | Versión Tablet                                           | Versión mobil                                           |
+
+- **Alta Fidelidad**: 
+
+  | ![Descripción alternativa 1](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-1.png?raw=true) | ![Descripción alternativa 2](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-2.png?raw=true) | ![Descripción alternativa 3](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-3.png?raw=true) | ![Descripción alternativa 4](https://github.com/Susana-equihua/DEV015-dataverse/blob/main/Dise%C3%B1o%20de%20la%20interfaz/prototipo-alta-fidelidad-4.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Versión Desktop 1                                          | Versión Mobile                                           | Versión Tablet                                           | Versión Tablet 2                                           |
+
+### 4. Prompting
+Para la recolección de la información que se iba a usar dentro de la página, recurrimos al uso de una inteligencia artificial (ChatGPT), al que le dimos las siguientes indicaciones: 
+- **Primer promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Primer%20prompt.png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
+
+- **Segundo promp:**
+
+  | ![Segundo promp pt1](https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Segundo%20prompt%20pt1.png?raw=true) | ![Segundo promp pt2](https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Segundo%20prompt%20pt2.png?raw=true) |
+  |:-------------------------------------------------------:|:-------------------------------------------------------:|
+  | Parte 1                                            | Parte 2                                            |
+
+- **Tercer promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Tercer%20prompt%20(mejora%20de%20descripci%C3%B3n%20corta).png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
+
+- **Cuarto promp:**
+
+  <img src="https://github.com/Pamelajharely83/DEV015-dataverse/blob/main/PROMPTING%20-%20DATAVERSE/Quinto%20prompt%20(obtenci%C3%B3n%20de%20informaci%C3%B3n%20adicional%20para%20descripci%C3%B3n%20larga).png?raw=true" alt="primer-promp" width="400" style="margin-right: 10px;"/>
 
 ## 5. Puntos de mejora en la aplicación
 
